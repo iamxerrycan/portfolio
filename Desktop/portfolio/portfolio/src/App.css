@@ -1,0 +1,29 @@
+/* App.css */
+
+/* Apply a basic styling reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the main container */
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the app takes at least the full height of the viewport */
+  }
+  
+  /* Style for the content area excluding the footer */
+  .content {
+    flex: 1; /* Allows the content to expand and fill the remaining space */
+  }
+  
+  /* Style for the footer */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  

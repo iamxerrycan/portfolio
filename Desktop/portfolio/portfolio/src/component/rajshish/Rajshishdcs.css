@@ -1,0 +1,58 @@
+.AghoriDocxDiv{
+    margin-top: 0;
+    background: rgb(246, 221, 147);
+    padding: 10px 5px;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .marquee-content {
+    white-space: nowrap;
+    animation: marquee 60s linear infinite;
+
+        font-size: 72px;
+        background: -webkit-linear-gradient(#eee, #f30707 ,grey);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+.mytextForFuture{
+    margin: 40px;
+
+}
+#myInputField{
+    columns: 25rem;
+    margin-bottom: 20rem;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+
+}
+
+#AghoriCopyBtn{
+    background-color: rgb(3, 3, 3);
+    color: white;
+    height: 30px;
+    width: 80px;
+    padding: 5px 2px;
+    position: absolute;
+    top: 1;
+
+    border-radius: 6px;
+
+    margin-left: 12px;
+}
