@@ -1,0 +1,32 @@
+.navbarDiv{
+background-color: rgb(33, 33, 33);
+color: white;
+display: flex;
+justify-content:space-between;
+/* padding: 10px 6px 0px 0px; */
+padding: -10px;
+font-family: sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    margin-top: 15px;
+    padding-right: 10px;
+
+}
+#navText{
+    font-size: 20px;
+}
+a:hover{ 
+
+    transition: 0.6s ;
+    transform: scale(1.1);
+    color:#007bff;
+}
+#mylogo{
+    height: 2.5rem;
+    width: 8rem;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
