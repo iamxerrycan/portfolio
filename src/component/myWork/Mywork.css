@@ -1,26 +1,25 @@
-/* Mywork.css */
 
 .container {
-  height: 35rem; /* Adjust the height to fit the content */
+  height: 35rem; 
   font-family: Arial, sans-serif;
-  border-radius: 5px; /* Corrected property value */
-  border: 1px solid #000000; /* Added border */
-  padding: 10px; /* Added padding for better spacing */
+  border-radius: 5px; 
+  border: 1px solid #000000;
+  padding: 10px; 
   
 }
 
 .header {
   text-align: center;
-  margin: 5px; /* Adjusted margin syntax */
-  font-size: 18px; /* Adjusted font size */
+  margin: 5px; 
+  font-size: 18px;
 }
 
 .work-table {
   width: 100%;
   border-collapse: collapse;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px; /* Added border-radius */
-  overflow: hidden; /* Prevent table content from overflowing */
+  border-radius: 5px; 
+  overflow: hidden; 
 }
 
 .thead {
@@ -39,9 +38,7 @@
   font-weight: bold;
 
 }
-/* .tbody{
-  color: white;
-} */
+
 
 .tdtable:last-child {
   text-align: center;

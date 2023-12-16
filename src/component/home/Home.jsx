@@ -13,12 +13,10 @@ const Home = () => {
       </div>
       <div className="display-flex">
         <div className="resume-down"></div>
-        <div>
-          <h1>Download Resume</h1>
-          <a href="../../assets/resume.pdf" download="resume.pdf">
-            Download Resume
-          </a>
-        </div>
+        <h1>Download Resume</h1>
+        <a href="../../assets/resume.pdf" download="resume.pdf">
+          Download Resume
+        </a>
       </div>
     </div>
   );

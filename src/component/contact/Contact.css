@@ -1,31 +1,31 @@
-/* Contact.css */
+
 
 .container {
   display: flex;
   justify-content: center;
   align-items: column;
   flex-direction: column;
-  height: 100vh; /* Adjust the height as needed */
-  background-color: black; /* This will cover the background in black */
-  padding: 0 20px; /* Adjust padding as needed */
+  height: 100vh; 
+  background-color: black;
+  padding: 0 20px; 
 }
 
 .about,
 .contact-card {
-  width: calc(50% - 10px); /* Adjust width and margins for spacing */
+  width: calc(50% - 10px); 
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #f9f9f9;
-  margin: 5px; /* Adjust margin as needed */
+  margin: 5px;
 }
 
 .about{
-  order: 1; /* Change order to display about-section first */
+  order: 1; 
 }
 
 .contact-card {
-  order: 2; /* Change order to display contact-card second */
+  order: 2;
 }
 
 
