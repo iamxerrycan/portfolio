@@ -1,4 +1,3 @@
-// Contact.js
 
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
@@ -7,13 +6,11 @@ import devloper from "../../assets/devloper.png";
 import { updateValue } from "../../actions/ActionCreaters";
 import { useSelector } from "react-redux";
 import About from "../about/About";
+import linkedinIcon from "../../assets/git.png";
+import githubIcon from "../../assets/linkdin.png";
 
 const Contact = () => {
-  const aboutData = {
-    image: devloper,
-    description: "I love coding and creating innovative solutions.",
-    mywork: "mywork",
-  };
+
 
   const contactData = useSelector((state) => state.form.formData);
   console.log(contactData, "contact data ");
@@ -53,6 +50,7 @@ const Contact = () => {
     e.preventDefault();
     if (validate()) {
       dispatch(updateValue(form));
+      
     }
     setForm({
       name: "",
@@ -63,6 +61,8 @@ const Contact = () => {
 
   return (
     <div className="conatainer">
+      {/* <span style={{color:"white", textAlign: "center"}}>contactme!</span> */}
+      <p style={{color:"white", textAlign: "center", paddingTop:"20px"}} > Contact me! </p>
       <div className="contact-card">
         <form onSubmit={handleSubmit} className="form">
           <input
@@ -92,6 +92,18 @@ const Contact = () => {
 
           <button type="submit">Send</button>
         </form>
+      </div>
+      <div className="alllink">
+        <div>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+          <img src={linkedinIcon} alt="LinkedIn" className="social-icon"/>
+        </a>
+        <a href="https://www.github.com" target="_blank" rel="noopener noreferrer">
+          <img src={githubIcon} alt="GitHub" className="social-icon"/>
+        </a>
+        <p className="paralink">Connet with me !</p>
+        </div>
+      
       </div>
     </div>
   );

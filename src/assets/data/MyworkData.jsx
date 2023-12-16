@@ -1,26 +1,26 @@
 const MyworkData =[
     {
-        name: "MERN",
+        name: "User Management",
         contributors: ["Rajshish"],
-        technologies: ["React", "Node.js", "MongoDB"],
+        technologies: ["React", "Node.js", "express"],
         link: "https://github.com/rajshish333"
       },
       {
-        name: "Front-End",
-        contributors: ["Rajshish", "Kamali"],
-        technologies: ["Angular", "Express", "PostgreSQL"],
+        name: "SignUp-LoginIn",
+        contributors: ["Rajshish"],
+        technologies: ["React", "Redux", "Api-Integration"],
         link: "https://github.com/rajshish333"
       },
     {
-        name: "Backend",
-        contributors: ["Rajshish", "Samaj"],
-        technologies: ["React", "Node.js", "MongoDB"],
+        name: "Counter",
+        contributors: ["Rajshish"],
+        technologies: ["React", "Hooks"],
         link: "https://github.com/rajshish333"
       },
       {
         name: "Portfollio",
-        contributors: ["Alice", "Bob"],
-        technologies: ["Angular", "Express", "PostgreSQL"],
+        contributors: ["Rajshish", "RajKamal"],
+        technologies: ["React", "Js"],
         link: "https://github.com/rajshish333"
       },
 ]

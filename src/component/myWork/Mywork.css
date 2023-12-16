@@ -1,10 +1,10 @@
 
 .container {
-  height: 35rem; 
+  height: 32rem; 
   font-family: Arial, sans-serif;
   border: 1px solid #000000;
-  padding: 10px; 
-  
+  align-items: center; 
+  height: 100%;
 }
 
 .header {
