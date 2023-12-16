@@ -12,7 +12,6 @@ const Home = () => {
         <p style={{ color: "white" }}>I'm a passionate developer.</p>
       </div>
       <div className="display-flex">
-        <div className="resume-down"></div>
         <h1>Download Resume</h1>
         <a href="../../assets/resume.pdf" download="resume.pdf">
           Download Resume

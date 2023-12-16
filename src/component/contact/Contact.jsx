@@ -62,13 +62,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="conatiner">
-      <div className="about">
-        <p>h</p>
-        <p>h</p>
-        <p>h</p>
-        <p>h</p>
-      </div>
+    <div className="conatainer">
       <div className="contact-card">
         <form onSubmit={handleSubmit} className="form">
           <input

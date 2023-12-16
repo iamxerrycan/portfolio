@@ -1,25 +1,24 @@
-
 * {
-    margin: 0;
-    padding: 0;
-    /* box-sizing: border-box; */
-  }
-  
-  
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; 
-  }
-  
- 
-  .content {
-    flex: 1; }
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+}
 
-  .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-  }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x:hidden !important;
   
+}
+
+.content {
+  flex: 1;
+  background-color: black !important;
+}
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
