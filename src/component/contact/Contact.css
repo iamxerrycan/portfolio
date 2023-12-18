@@ -45,12 +45,12 @@ textarea:focus {
 
 textarea {
   resize: none;
-  width: 320px  !important;
+  
 }
 
 button {
   padding: 10px;
-  margin-left: 120px;
+  margin-left: 100px;
   border: none;
   border-radius: 5px;
   background-color: #007bff;
@@ -113,5 +113,41 @@ button {
   }
   100% {
     opacity: 1;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container-contact {
+    display: block; 
+
+  }
+  textarea {
+    width: 100%; 
+    max-width: calc(100% - 22px); 
+    margin: 5px 0; 
+  }
+
+  .form-hold,
+  .alllink-detail {
+    width: 100%; 
+    margin: 10px; 
+  }
+
+  .form {
+    margin-left: 0; 
+  }
+
+  input,
+  textarea {
+    width: 100%; 
+    margin: 5px 0; }
+
+  button {
+    margin-left: 0; 
+  }
+
+  .contact-title {
+    padding-bottom: 10px; 
   }
 }
