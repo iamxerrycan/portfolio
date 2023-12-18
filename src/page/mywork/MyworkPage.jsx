@@ -5,9 +5,9 @@ import MyworkData from '../../assets/data/MyworkData';
 
 const  MyworkPage=()=>{
   return (
-    <div className='myworkpage'>
+    <>
         <Mywork projects={MyworkData}/>
-    </div>
+</>
   )
 }
 

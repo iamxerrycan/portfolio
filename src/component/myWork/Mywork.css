@@ -1,11 +1,22 @@
-
 .container {
-  height: 32rem; 
+  display: flex;
+  flex-direction: column;
   font-family: Arial, sans-serif;
   border: 1px solid #000000;
-  align-items: center; 
   height: 100%;
 }
+
+.work-table {
+  width: 100%;
+  margin-bottom: 10px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+
 
 .header {
   text-align: center;
@@ -13,16 +24,8 @@
   font-size: 18px;
 }
 
-.work-table {
-  width: 100%;
-  border-collapse: collapse;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 5px; 
-  overflow: hidden; 
-}
-
 .thead {
-  background-color: #007bff;
+  background-color: #07a8d0;
   color: white;
 }
 

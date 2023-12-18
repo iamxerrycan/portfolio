@@ -10,9 +10,7 @@ function App() {
     <div className="main-container">
     <BrowserRouter>
       <Navbar />
-      <div className="content">
-        <AllRoutes />
-      </div>
+        <AllRoutes /> 
       <Footer className="footer" />
     </BrowserRouter>
   </div>

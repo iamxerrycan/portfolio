@@ -1,7 +1,7 @@
 import React from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-import logo from "../../assets/crown.jpg";
+import logo from "../../assets/devloper.png";
 
 const Navbar = () => {
   return (
@@ -14,11 +14,14 @@ const Navbar = () => {
           <Link to="/">
             <a id="navText">Home</a>
           </Link>
-          <Link to="/Rajshishdcs">
-            <a id="navText">Rajshish</a>
+          <Link to="/About">
+            <a id="navText">About</a>
+          </Link>
+          <Link to="/Skill">
+            <a id="navText">Skill</a>
           </Link>
           <Link to="/MyworkPage">
-            <a id="navText">MyWork</a>
+            <a id="navText">Work</a>
           </Link>
           <Link to="/Contact">
             <a id="navText">Contact</a>
