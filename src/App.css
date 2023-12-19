@@ -18,3 +18,15 @@
   text-align: center;
   padding: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    height: auto; 
+  }
+  
+  .footer {
+    padding: 10px; 
+    font-size: 14px; 
+  }
+}
