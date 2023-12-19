@@ -1,32 +1,5 @@
 * {
   margin: 0;
   padding: 0;
-    box-sizing: border-box;
-}
+ }
 
-.main-container {
-  display: flex;
-  flex-direction: column;
-  background-color: black ;
-  height: 620px;
-  overflow-x:hidden !important;
-  
-}
-.footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
-
-
-@media screen and (max-width: 768px) {
-  .main-container {
-    height: auto; 
-  }
-  
-  .footer {
-    padding: 10px; 
-    font-size: 14px; 
-  }
-}

@@ -1,66 +1,67 @@
 .container-home {
   display: flex;
-  flex-direction: column; /* Change to column on smaller screens */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 20px;
-  height: 100vh; /* Change to viewport height */
 }
 
 .logo {
-  width: 100%; /* Occupy full width */
-  text-align: center; /* Center text within the logo */
-  margin-bottom: 15px; /* Reduce margin */
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .developer-image {
-  width: 150px; /* Decrease size for smaller screens */
-  height: 150px; /* Decrease size for smaller screens */
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  margin-bottom: 15px; /* Adjust margin */
-  box-shadow: 0 0 5px rgba(52, 5, 5, 0.2); /* Reduce box shadow */
+  margin-bottom: 15px;
+  box-shadow: 0 0 5px rgba(52, 5, 5, 0.2);
 }
 
 .heading-raj {
-  font-size: 18px; /* Decrease font size for smaller screens */
-  padding: 10px; /* Adjust padding */
-  margin-bottom: 5px; /* Adjust margin */
-  color: #6ac4f1; /* Override text color */
-  background-color: #000000; /* Override background color */
+  color: #6ac4f1;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  background-color: #000000;
   border-radius: 5px;
 }
 
 .mydata {
   color: rgb(215, 210, 210);
-  text-align: center; /* Center text on smaller screens */
+  text-align: center;
 }
 
 button {
-  width: 100%; /* Occupy full width */
-  margin-top: 10px; /* Add margin for better spacing */
-  font-size: 14px; /* Adjust font size for smaller screens */
-  height: auto; /* Allow button height to adjust based on content */
+  width: 100%;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  height: 40px;
 }
 
 .display-flex {
+  display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-/* Media query for smaller screens */
 @media screen and (max-width: 768px) {
-  .container-home {
-    height: auto; /* Adjust height as per content */
-  }
-
   .developer-image {
-    width: 100px; /* Further decrease image size */
-    height: 100px; /* Further decrease image size */
+    width: 150px;
+    height: 150px;
   }
 
   .heading-raj {
-    font-size: 16px; /* Further decrease font size */
-    padding: 8px; /* Further adjust padding */
+    font-size: 16px;
+    padding: 8px;
   }
 }
