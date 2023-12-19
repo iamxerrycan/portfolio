@@ -15,7 +15,7 @@ const Footer = () => {
     <>
     <div className='footerDiv'>
     {/* <p onClick={handleScrollClick}>^</p> */}
-        <p>All Rights Protected &copy; Aghori Inc 2023 </p>
+        <p>All Rights Protected &copy; Rajshish Inc 2023 </p>
     </div>
     
     </>
