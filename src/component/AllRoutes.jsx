@@ -8,7 +8,6 @@ import Skill from "./skill/Skill"
 
 const AllRoutes = () => {
   return (
-    <>
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="Rajshishdcs" element={<Rajshishdcs />} /> */}
@@ -17,7 +16,6 @@ const AllRoutes = () => {
         <Route path="Skill" element={<Skill />} />
         <Route path="MyworkPage" element={<MyworkPage />} />
       </Routes>
-    </>
   );
 };
 
