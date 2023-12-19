@@ -101,7 +101,7 @@
   left: 0;
   height: 100%;
   width: 30%;
-  background-color: #17ec53;
+  background-color: #17a8ec;
 }
 
 .horizontal-line:nth-child(2)::after {
@@ -111,5 +111,5 @@
   left: 0;
   height: 100%;
   width: 60%;
-  background-color: #17ec53;
+  background-color: #17a8ec;
 }
