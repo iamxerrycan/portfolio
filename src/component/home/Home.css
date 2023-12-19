@@ -29,13 +29,12 @@
 
 .heading-raj {
   display: inline-block;
-  color: #007bff;
+  color: #6ac4f1;
   padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 24px;
   background-color: #000000;
   border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(58, 236, 198, 0.1);
 }
 .mydata{
   color: rgb(215, 210, 210);
@@ -59,24 +58,4 @@ button{
 
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateX(-20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}

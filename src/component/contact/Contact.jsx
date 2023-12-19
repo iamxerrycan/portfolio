@@ -203,20 +203,6 @@ const Contact = () => {
           >
             <img src={linkedinIcon} alt="GitHub" className="social-icon" />
           </a>
-          <a
-            href="https://www.github.com/rajshish333"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedinIcon} alt="GitHub" className="social-icon" />
-          </a>
-          <a
-            href="https://www.github.com/rajshish333"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={linkedinIcon} alt="GitHub" className="social-icon" />
-          </a>
         </div>
         <div className="contact-info">
           <p>Contact No: +1234567890</p>

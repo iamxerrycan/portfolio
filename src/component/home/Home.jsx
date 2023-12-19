@@ -1,5 +1,5 @@
 import React from "react";
-import devloper from "../../assets/me.jpg";
+import devloper from "../../assets/my.avif";
 import "./Home.css";
 
 const Home = () => {
