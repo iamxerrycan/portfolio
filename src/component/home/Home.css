@@ -67,18 +67,11 @@ button {
 }
 
 @media screen and (max-width: 480px) {
-  .main-skill {
+  .container-home {
     height: auto;
     width: auto;
     overflow: hidden;
     background-color: rgb(0, 0, 0);
     flex-direction: column;
-  }
-  .row , .program {
-    width: auto;
-    margin: 5px;
-  }
-  .column , .small-logo-line{
-    margin: 5px;
   }
 }
