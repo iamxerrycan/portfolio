@@ -1,4 +1,3 @@
-
 .container-home {
   display: flex;
   flex-direction: row;
@@ -13,7 +12,7 @@
   margin-bottom: 20px;
   float: left;
   width: 50%;
-  justify-content:space-between;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   display: flex;
@@ -36,12 +35,12 @@
   background-color: #000000;
   border-radius: 5px;
 }
-.mydata{
+.mydata {
   color: rgb(215, 210, 210);
   text-align: left;
 }
 
-button{
+button {
   justify-content: center;
   text-align: center;
   border: none;
@@ -52,10 +51,18 @@ button{
   cursor: pointer;
   height: 100%;
 }
-.display-flex{
+.display-flex {
   justify-content: center;
   align-items: center;
-
 }
 
+@media screen and (max-width: 768px) {
+  .developer-image {
+    width: 100px;
+    height: 100px;
+  }
 
+  .heading-raj {
+    font-size: 16px;
+  }
+}
