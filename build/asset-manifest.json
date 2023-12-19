@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f07dda98.css",
+    "main.js": "/static/js/main.8531d9af.js",
+    "static/media/backend.jpg": "/static/media/backend.798228f76f40acaf5405.jpg",
+    "static/media/frontend.jpg": "/static/media/frontend.b26036d3f5787aca6cb5.jpg",
+    "static/media/profession.jpg": "/static/media/profession.9c6dc00909dc4b724716.jpg",
+    "static/media/student.jpg": "/static/media/student.e70705e0d8041d546464.jpg",
+    "static/media/node.svg": "/static/media/node.8b9c2a9425ac2709f4804fa26d7a71ee.svg",
+    "static/media/my.avif": "/static/media/my.7df881d7980d729f4c18.avif",
+    "static/media/react.svg": "/static/media/react.fcaa2c199ef290018b9425ccb4b29866.svg",
+    "static/media/express.svg": "/static/media/express.cb87821a8fc22352a11fc87690d98b3b.svg",
+    "static/media/css.svg": "/static/media/css.1b8e9d55a8e9a8d9356e1570e17f206c.svg",
+    "static/media/html.svg": "/static/media/html.b5265e825e799e9f2c6aa481f270f0fe.svg",
+    "index.html": "/index.html",
+    "main.f07dda98.css.map": "/static/css/main.f07dda98.css.map",
+    "main.8531d9af.js.map": "/static/js/main.8531d9af.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f07dda98.css",
+    "static/js/main.8531d9af.js"
+  ]
+}
