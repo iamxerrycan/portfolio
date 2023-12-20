@@ -1,11 +1,21 @@
 .main-skill {
   display: flex;
   flex-direction: row;
-  height: 544px;
-  width: 100%;
+  height: 83vh;
   background-color: black;
 
 }
+
+/* .container-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  height: 87.6vh;
+  background-color: #000000;
+} */
 .program {
   display: flex;
   flex-direction: column;
