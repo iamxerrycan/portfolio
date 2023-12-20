@@ -4,7 +4,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 87.7vh;
+  flex-wrap: wrap;
+  height: 87.6vh;
   background-color: #000000;
 }
 
