@@ -1,5 +1,3 @@
-/* Contact.css */
-
 .container-contact {
   width: 100%;
   background-color: #000000;
@@ -59,7 +57,7 @@ button {
   cursor: pointer;
   max-width: 100px;
 }
-.links a{
+.links a {
   margin: 10px;
 }
 
@@ -117,44 +115,6 @@ button {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .container-contact {
-    display: block;
-    height: auto;
-  }
-  textarea {
-    width: 100%;
-    max-width: calc(100% - 22px);
-    margin: 5px 0;
-  }
-
-
-  .form-hold,
-  .alllink-detail {
-    width: 100%;
-    margin: 10px;
-  }
-
-  .form {
-    margin-left: 0;
-  }
-
-  input,
-  textarea {
-    width: 100%;
-    margin: 5px 0;
-  }
-
-  button {
-    margin-left: 0;
-  }
-
-  .contact-title {
-    padding-bottom: 10px;
-    border-bottom: 2px solid #007bff !important;
-  }
-}
-
 @media screen and (max-width: 480px) {
   .container-contact {
     height: 85vh;
@@ -173,13 +133,13 @@ button {
   .form {
     width: 100%;
   }
-  input{
+  input {
     width: auto;
   }
   textarea {
     width: 100% !important;
   }
-  .links a{
+  .links a {
     margin: 10px;
   }
 }
