@@ -71,6 +71,9 @@
     width: auto;
     overflow: hidden;
   }
+  .about-row{
+    padding: 5px;
+  }
   .form-hold {
     width: auto;
     padding: 5px;
