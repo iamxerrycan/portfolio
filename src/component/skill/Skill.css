@@ -1,7 +1,7 @@
 .main-skill {
   display: flex;
   flex-direction: row;
-  height: 83vh;
+  height: 100vh;
   background-color: black;
 
 }
