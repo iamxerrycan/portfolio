@@ -164,6 +164,7 @@ button {
     background-color: rgb(0, 0, 0);
   }
   .form-hold {
+    margin-top: 15px;
     width: auto;
     padding: 5px;
     margin: 10px;
