@@ -132,6 +132,7 @@ button {
   }
   .form {
     width: 100%;
+    align-items: center;
   }
   input {
     width: auto;
@@ -144,5 +145,10 @@ button {
   }
   .alllink-detail{
     margin-left: 50%;
+  }
+  button{
+    margin-bottom: 5px;
+    margin-left: 50%;
+    margin-right: 50%;
   }
 }
