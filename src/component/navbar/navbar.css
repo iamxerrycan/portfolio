@@ -80,10 +80,14 @@ a:hover {
   padding-bottom: 5px; 
   padding-left: 5px;
 }
-
-
 .toggle-icon {
   display:none;
+}
+
+.navbar-links {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px) {
