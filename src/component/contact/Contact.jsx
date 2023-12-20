@@ -104,6 +104,7 @@ import "./Contact.css"; // Import CSS file
 import devloper from "../../assets/devloper.png";
 import { updateValue } from "../../actions/ActionCreaters";
 import { useSelector } from "react-redux";
+import {toast , ToastContainer} from 'react-toastify'
 import About from "../about/About";
 import linkedinIcon from "../../assets/git.png";
 import githubIcon from "../../assets/linkdin.png";
@@ -146,6 +147,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
+      toast.success("WIP!")
       dispatch(updateValue(form));
     }
     setForm({
