@@ -1,10 +1,11 @@
 .container-home {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 20px;
+  height: 87.7vh;
+  background-color: #000000;
 }
 
 .logo {
@@ -39,19 +40,19 @@
 
 button {
   width: 100%;
-  margin-top: 10px;
-  border: none;
   border-radius: 5px;
   background-color: #007bff;
   color: white;
   font-size: 14px;
   cursor: pointer;
   height: 40px;
+  text-align: center;
 }
 
 .display-flex {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,5 +74,19 @@ button {
     overflow: hidden;
     background-color: rgb(0, 0, 0);
     flex-direction: column;
+  }
+  .display-flex{
+    padding: 10px;
+  }
+  .button-res{
+    background-color: rgb(0, 91, 165);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
   }
 }

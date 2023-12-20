@@ -126,9 +126,20 @@
   }
   .row , .program {
     width: auto;
+    height: auto;
     margin: 5px;
+    padding: 2px;
+    justify-content: space-between;
   }
-  .column , .small-logo-line{
-    margin: 5px;
+  .logo-with-para p{
+    display: block;
+  }
+  .logo-with-para img{
+    width: 100px;
+    height: 150px;
+  }
+  .column , .headpara, .small-logo-line{
+    padding-top: 3px;
+    padding-bottom: 3px;
   }
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import devloper from "../../assets/my.avif";
 import "./Home.css";
+//import Resume from '../../../public/resume.pdf'
 
 const Home = () => {
   return (
@@ -16,9 +17,9 @@ const Home = () => {
         </div>
       </div>
       <div className="display-flex">
-        <a href="RajshishFr.pdf" download="RajshishFr.pdf">
-          <button>Download Resume</button>
-        </a>
+        <button href="Resume" download="RajshishFr.pdf" className= "button-res" for="Rajshish">
+          Download Resume
+        </button>
       </div>
     </div>
   );
