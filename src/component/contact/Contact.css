@@ -137,7 +137,7 @@ button {
     width: auto;
   }
   textarea {
-    width: 100% !important;
+    width: auto;
   }
   .links a {
     margin: 10px;
