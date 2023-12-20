@@ -142,4 +142,7 @@ button {
   .links a {
     margin: 10px;
   }
+  .alllink-detail{
+    margin-left: 50%;
+  }
 }
