@@ -120,6 +120,7 @@ button {
 @media screen and (max-width: 768px) {
   .container-contact {
     display: block;
+    height: auto;
   }
   textarea {
     width: 100%;
@@ -164,6 +165,7 @@ button {
   .form-hold {
     width: auto;
     margin: 5px;
+    height: auto;
   }
   .form {
     width: 100%;
