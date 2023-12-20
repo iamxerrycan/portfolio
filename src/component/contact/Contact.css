@@ -5,7 +5,7 @@
   background-color: #000000;
   overflow: hidden;
   display: flex;
-  height: 544px;
+  height: 100vh;
 }
 
 .form-hold {
