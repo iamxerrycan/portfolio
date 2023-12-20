@@ -48,7 +48,7 @@
   color: rgb(3, 98, 175);
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .container {
    height: 85vh;
    width: auto;
@@ -64,5 +64,32 @@
   .thead .thtable {
     width: auto;
     height: auto;
+  }
+} */
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: 85vh;
+    width: auto;
+    background-color: rgb(0, 0, 0);
+    padding: 1px;
+  }
+
+  .work-table {
+    width: 100%;
+    max-width: 80vh; /* Ensures the table doesn't overflow horizontally */
+    overflow-x: auto; /* Enables horizontal scrolling if needed */
+    margin: 0;
+    padding: 3px;
+  }
+
+  .thead .thtable {
+    width: auto;
+    height: auto;
+  }
+
+  .same {
+    font-size: 10px; 
+    padding: 8px; 
   }
 }
