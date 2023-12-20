@@ -165,7 +165,8 @@ button {
   }
   .form-hold {
     width: auto;
-    margin: 5px;
+    padding: 5px;
+    margin: 10px;
     height: auto;
   }
   .form {
