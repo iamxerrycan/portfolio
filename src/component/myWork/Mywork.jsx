@@ -8,7 +8,7 @@ const Mywork = ({ projects }) => {
       <table className="work-table">
         <thead className="thead">
           <tr className="trtable">
-            <th className="same">Projrct Name</th>
+            <th className="same">Project Name</th>
             <th className="same">Contributer</th>
             <th className="same">Technology</th>
             <th className="same">Link</th>
