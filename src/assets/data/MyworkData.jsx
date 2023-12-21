@@ -1,8 +1,8 @@
 const MyworkData =[
     {
-        name: "User Management",
+        name: "User Management (CRUD)",
         contributors: ["Rajshish"],
-        technologies: ["React", "Node.js", "express"],
+        technologies: ["React", "Node.js", "express","API"],
         link: "https://github.com/rajshish333/fullstack"
       },
       {
@@ -14,13 +14,13 @@ const MyworkData =[
     {
         name: "Counter",
         contributors: ["Rajshish"],
-        technologies: ["React", "Hooks"],
+        technologies: ["React", "Hooks","state"],
         link: "https://webappcounter.netlify.app"
       },
       {
         name: "Portfollio",
         contributors: ["Rajshish"],
-        technologies: ["React", "Js"],
+        technologies: ["React", "Js","Toast"],
         link: "https://github.com/rajshish333/portfolio"
       },
       {
