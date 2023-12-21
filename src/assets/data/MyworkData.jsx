@@ -19,7 +19,7 @@ const MyworkData =[
       },
       {
         name: "Portfollio",
-        contributors: ["Rajshish", "RajKamal"],
+        contributors: ["Rajshish"],
         technologies: ["React", "Js"],
         link: "https://github.com/rajshish333/portfolio"
       },
