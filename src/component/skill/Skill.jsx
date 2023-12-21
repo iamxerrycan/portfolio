@@ -44,10 +44,10 @@ const Skill = () => {
           <div className="logo-with-para">
             <img src={back} alt="Skill 2" />
             <p>
-              "Back-End: Skilled in building robust and scalable server-side
-              applications using languages such as Node.js. Experienced in
-              designing and developing RESTful APIs and integrating complex
-              systems for efficient data management.
+              "Back-End: I have knowledge in scalable server-side applications
+              using languages such as Node.js Expess.js .I have practical
+              Experience in designing and developing RESTful APIs and
+              integrating for efficient data management.
             </p>
           </div>
         </div>
@@ -76,7 +76,11 @@ const Skill = () => {
           <span className="horizontal-line"></span>
         </div>
         <div className="small-logo-line">
-          <img src={express} style={{background:"white"}} alt="Small skill 2" />
+          <img
+            src={express}
+            style={{ background: "white" }}
+            alt="Small skill 2"
+          />
           <span className="horizontal-line"></span>
         </div>
         <div className="small-logo-line">
