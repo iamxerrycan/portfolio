@@ -113,7 +113,8 @@ a:hover {
   }
 
   .navbar-links.active {
-    display:inline-table; 
+    display:block; 
+    text-decoration: none;
   }
 }
 

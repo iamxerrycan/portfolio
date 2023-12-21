@@ -17,8 +17,13 @@ const Home = () => {
         </div>
       </div>
       <div className="display-flex">
-        <button href="Resume" download="RajshishFr.pdf" className= "button-res" for="Rajshish">
-          Download Resume
+        <button
+          href="Resume"
+          download="RajshishFr.pdf"
+          className="button-res"
+          for="Rajshish"
+        >
+          Resume
         </button>
       </div>
     </div>
