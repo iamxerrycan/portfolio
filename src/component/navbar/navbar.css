@@ -1,70 +1,28 @@
-/* .navbarDiv {
+.navbar {
   background-color: rgb(33, 33, 33);
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: -10px;
+  padding: 10px;
   font-family: sans-serif;
+  flex-wrap: wrap;
 }
 
 a {
   text-decoration: none;
   color: white;
-  display: flex;
+  display: inline-block;
+  width: 60px;
+  height: 30px;
+  justify-content: center;
   align-items: center;
-  margin-right: 10px;
+  display: flex;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, #7f00ff, #e100ff);
 }
 
 #navText {
-  font-size: 20px;
-  align-items: center;
-}
-a:hover {
-  transition: 0.6s;
-  transform: scale(1.1);
-  color: #07a8d0;
-}
-#mylogo {
-  height: 3rem;
-  width: 3rem;
-  border-radius: 50%;
-  padding-bottom: 10px;
-  padding-left: 10px;
-}
-
-@media screen and (max-width: 480px) {
-  .navbarDiv {
-    height: auto;
-    width: auto;
-  }
-  a{
-    flex-wrap:wrap;
-  }
-}
-
- */
-
-
- .navbar {
-  background-color: rgb(33, 33, 33);
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  padding: 10px; 
-  font-family: sans-serif;
-  flex-wrap: wrap; 
-}
-
-a {
-  text-decoration: none;
-  color: white;
-  display: inline-block; 
-  margin-right: 10px;
-  padding: 5px; 
-}
-
-#navText {
-  font-size: 16px; 
+  font-size: 16px;
 }
 
 a:hover {
@@ -77,45 +35,62 @@ a:hover {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  padding-bottom: 5px; 
+  padding-bottom: 5px;
   padding-left: 5px;
 }
 .toggle-icon {
-  display:none;
+  display: none;
 }
 
 .navbar-links {
-  display: flex; 
+  display: flex;
   justify-content: center;
   align-items: center;
+  gap: 20px;
 }
 
 @media screen and (max-width: 480px) {
   .toggle-icon {
-    display: block; 
+    display: block;
   }
-  .toggle-icon:hover{
+  .navbar {
+    display: flex;
+    flex-direction: row;
+  }
+  .toggle-icon:hover {
     transition: 0.6s;
     transform: scale(1.1);
     color: #07a8d0;
   }
 
   .navbar-links {
-    display: none; 
-  }
-  #mylogo{
     display: none;
   }
-  .navbar-header{
+  #mylogo {
+    display: none;
+    justify-content: flex-start;
+  }
+  .navbar-header {
     justify-content: center;
     display: flex;
     align-items: center;
   }
 
   .navbar-links.active {
-    display:block; 
-    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 14px;
+    justify-content: flex-start;
   }
+  a {
+    width: 55px;
+    height: 25px;
+  }
+  /* .navbar-links active{
+    display: block;
+  } */
+  /* a{display: none;} */
 }
-
-
