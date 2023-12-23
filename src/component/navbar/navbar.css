@@ -27,7 +27,7 @@ a {
 
 a:hover {
   transition: 0.6s;
-  transform: scale(1.1);
+  transform: scale(0.8);
   color: #ffffff;
 }
 
@@ -65,7 +65,7 @@ a:hover {
   }
   .toggle-icon:hover {
     transition: 0.6s;
-    transform: scale(1.1);
+    transform: scale(.8);
     background-image: linear-gradient(to right, #7f00ff, #e100ff);
   }
 
