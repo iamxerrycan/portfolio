@@ -124,7 +124,7 @@ button {
 
 @media screen and (max-width: 480px) {
   .container-contact {
-    height: 100vh;
+    height: 90vh;
     flex-direction: column;
     width: auto;
     display: flex;
