@@ -69,24 +69,15 @@
 
 @media screen and (max-width: 480px) {
   .container {
-    height: 85vh;
-    width: auto;
+    height: 69vh;
     background-color: rgb(0, 0, 0);
     padding: 1px;
   }
 
   .work-table {
-    width: 100%;
-    max-width: 80vh; 
-    overflow-x: auto; 
-    margin: 0;
-    padding: 3px;
+    border-radius: 5px;
     table-layout: fixed;
   }
-
-  .work-table table {
-    width: 100%;
-    table-layout: fixed; }
 
   .thead .thtable {
     width: auto;
