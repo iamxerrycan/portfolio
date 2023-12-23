@@ -133,12 +133,13 @@
     flex-direction: column;
   }
   .row{
-    margin-top: 15px;
+    margin-top: 25px;
   }
   .row , .program {
     width: auto;
     height: auto;
     margin: 5px;
+    margin-top: 10px;
     padding: 10px;
     justify-content: space-between;
   }
