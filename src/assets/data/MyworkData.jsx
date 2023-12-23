@@ -34,7 +34,14 @@ const MyworkData =[
         contributors: ["Rajshish"],
         technologies: ["html","css", "Js"],
         link: "https://vintage-timer.netlify.app/"
-      },
+      }, {
+        name: "Caclulator",
+        contributors: ["Rajshish"],
+        technologies: ["Reactjs"],
+        link: "https://calculator-react-webapp.netlify.app/"
+      }
+    
+    
 ]
 
 export default MyworkData;
