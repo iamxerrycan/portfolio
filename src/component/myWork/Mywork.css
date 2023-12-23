@@ -69,7 +69,7 @@
 
 @media screen and (max-width: 480px) {
   .container {
-    height: 69vh;
+    height: 85vh;
     background-color: rgb(0, 0, 0);
     padding: 1px;
   }
