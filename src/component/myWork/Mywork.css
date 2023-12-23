@@ -81,7 +81,12 @@
     overflow-x: auto; 
     margin: 0;
     padding: 3px;
+    table-layout: fixed;
   }
+
+  .work-table table {
+    width: 100%;
+    table-layout: fixed; }
 
   .thead .thtable {
     width: auto;
@@ -90,6 +95,6 @@
 
   .same {
     font-size: 10px; 
-    padding: 8px; 
+    padding: 4px; 
   }
 }
