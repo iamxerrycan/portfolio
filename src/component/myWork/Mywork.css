@@ -75,6 +75,7 @@
   }
 
   .work-table {
+    margin-top: 15px;
     border-radius: 5px;
     table-layout: fixed;
   }

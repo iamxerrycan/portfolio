@@ -132,6 +132,9 @@
     background-color: rgb(0, 0, 0);
     flex-direction: column;
   }
+  .row{
+    margin-top: 15px;
+  }
   .row , .program {
     width: auto;
     height: auto;
