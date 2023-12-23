@@ -28,15 +28,17 @@ a {
 a:hover {
   transition: 0.6s;
   transform: scale(1.1);
-  color: #07a8d0;
+  color: #ffffff;
 }
 
 #mylogo {
   height: 3rem;
   width: 3rem;
   border-radius: 50%;
-  padding-bottom: 5px;
-  padding-left: 5px;
+  padding-bottom: 3px;
+  padding-left: 3px;
+  box-shadow: 0 0 2px #7f00ff , 0 0 5px  #e100ff ;
+  
 }
 .toggle-icon {
   display: none;
@@ -52,15 +54,19 @@ a:hover {
 @media screen and (max-width: 480px) {
   .toggle-icon {
     display: block;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   .navbar {
     display: flex;
     flex-direction: row;
+    gap: 2px;
   }
   .toggle-icon:hover {
     transition: 0.6s;
     transform: scale(1.1);
-    color: #07a8d0;
+    background-image: linear-gradient(to right, #7f00ff, #e100ff);
   }
 
   .navbar-links {
@@ -85,7 +91,7 @@ a:hover {
     font-size: 14px;
     justify-content: flex-start;
   }
-  a {
+  .link a {
     width: 55px;
     height: 25px;
   }

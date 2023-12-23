@@ -160,7 +160,7 @@ const Contact = () => {
   return (
     <div className="container-contact">
       <div className="form-hold">
-        <p className="contact-title">Contact me!</p>
+        <p className="contact-title">Contact me !</p>
         <form onSubmit={handleSubmit} className="form">
           <input
             type="text"
