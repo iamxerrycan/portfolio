@@ -39,6 +39,11 @@ const MyworkData =[
         contributors: ["Rajshish"],
         technologies: ["Reactjs"],
         link: "https://calculator-react-webapp.netlify.app/"
+      },{
+        name: "Dhwani",
+        contributors: ["Rajshish"],
+        technologies: ["Reactjs "],
+        link: "https://dhvanee.netlify.app/"
       }
     
     
