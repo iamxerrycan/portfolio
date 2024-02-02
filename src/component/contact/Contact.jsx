@@ -192,14 +192,14 @@ const Contact = () => {
       <div className="alllink-detail">
         <div className="links">
           <a
-            href="https://www.linkedin.com/in/rajshish-singh-2591b3274"
+            href="https://www.linkedin.com/in/iamxerrycan"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={githubIcon} alt="LinkedIn" className="social-icon" />
           </a>
           <a
-            href="https://www.github.com/rajshish333"
+            href="https://github.com/iamxerrycan"
             target="_blank"
             rel="noopener noreferrer"
           >
