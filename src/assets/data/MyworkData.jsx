@@ -28,17 +28,16 @@ const MyworkData =[
         contributors: ["Rajshish"],
         technologies: ["html","css", "Js"],
         link: "https://iamxerrycan.netlify.app"
-      },
-      {
-        name: "Vintage-Clock",
-        contributors: ["Rajshish"],
-        technologies: ["html","css", "Js"],
-        link: "https://vintage-timer.netlify.app/"
       }, {
         name: "Caclulator",
         contributors: ["Rajshish"],
         technologies: ["Reactjs"],
         link: "https://calculator-react-webapp.netlify.app/"
+      },{
+        name: "Dhwani",
+        contributors: ["Rajshish"],
+        technologies: ["Reactjs "],
+        link: "https://dhvanee.netlify.app/"
       }
     
     
