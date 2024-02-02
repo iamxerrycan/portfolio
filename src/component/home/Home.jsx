@@ -15,16 +15,13 @@ const Home = () => {
             scalable web applications using modern technologies.
           </p>
         </div>
-      </div>
-      <div className="display-flex">
-        <button
+        {/* <button
           href="Resume"
           download="RajshishFr.pdf"
-          className="button-res"
           for="Rajshish"
         >
           Resume
-        </button>
+        </button> */}
       </div>
     </div>
   );
