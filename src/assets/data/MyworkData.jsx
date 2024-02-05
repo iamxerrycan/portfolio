@@ -45,7 +45,7 @@ const MyworkData = [
     name: "NGO project",
     contributors: ["Rajshish"],
     technologies: ["Reactjs "],
-    link: "https://github.com/iamxerrycan/ngo",
+    link: "https://jeevan-dhara-org.netlify.app/",
   },
 ];
 
