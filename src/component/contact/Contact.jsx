@@ -210,7 +210,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://www.npmjs.com/" alt="NPM" className="social-icon" />
+            <img src="https://iconduck.com/icons/27736/npm?shared" alt="NPM" className="social-icon" />
           </a>
         </div>
         <div className="contact-info">
