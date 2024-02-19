@@ -205,6 +205,13 @@ const Contact = () => {
           >
             <img src={linkedinIcon} alt="GitHub" className="social-icon" />
           </a>
+          <a
+            href="https://www.npmjs.com/~iamxerrycan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="https://www.npmjs.com/" alt="NPM" className="social-icon" />
+          </a>
         </div>
         <div className="contact-info">
           <p>Contact No: +1234567890</p>
