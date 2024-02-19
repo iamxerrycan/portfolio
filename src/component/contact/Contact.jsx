@@ -108,6 +108,7 @@ import {toast , ToastContainer} from 'react-toastify'
 import About from "../about/About";
 import linkedinIcon from "../../assets/git.png";
 import githubIcon from "../../assets/linkdin.png";
+import npm from "../../assets/images.png";
 
 const Contact = () => {
   const contactData = useSelector((state) => state.form.formData);
@@ -210,7 +211,7 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src="https://images.app.goo.gl/bPinuzDBh2oKJvts9" alt="NPM" className="social-icon" />
+            <img src={npm} alt="NPM" className="social-icon" />
           </a>
         </div>
         <div className="contact-info">
