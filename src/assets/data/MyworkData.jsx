@@ -38,7 +38,7 @@ const MyworkData = [
   {
     name: "Dhwani",
     contributors: ["Rajshish"],
-    technologies: ["Reactjs "],
+    technologies: ["Reactjs","(WIP)"],
     link: "https://dhvanee.netlify.app/",
   },
   {
