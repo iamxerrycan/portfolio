@@ -5,8 +5,9 @@ import './Accordian.css'
 
 const Accordian = () => {
   const [selected, setSelected] = useState(null);
-  const [enableMultisec , setenableMultisec]= useState(false) // button 
   const [multi , setmulti] = useState([])
+  const [enableMultisec , setenableMultisec]= useState(false) // button 
+  
 
 
   const handleSingleSelection = (dataId) => {
