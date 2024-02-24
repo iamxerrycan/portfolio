@@ -22,7 +22,7 @@ const Skill = () => {
           <div className="logo-with-para">
             <img src={tools} alt="Skill 1" />
             <p>
-              Git: Version control system for code collaboration and change
+              Tools : Version control system for code collaboration and change
               tracking. VS Code: Highly customizable source code editor for
               multiple languages. Postman: API development platform for testing
               and documentation. Chrome DevTools: Browser-based suite for web
@@ -34,7 +34,7 @@ const Skill = () => {
           <div className="logo-with-para">
             <img src={front} alt="Skill 1" />
             <p>
-              "Fron_End : Proficient in creating responsive and intuitive user
+              Fron_End : Proficient in creating responsive and intuitive user
               interfaces using HTML, CSS, and JavaScript. Familiar with modern
               front-end libraries and frameworks like React.
             </p>
@@ -44,7 +44,7 @@ const Skill = () => {
           <div className="logo-with-para">
             <img src={back} alt="Skill 2" />
             <p>
-              "Back-End: I have knowledge in scalable server-side applications
+              Back-End: I have knowledge in scalable server-side applications
               using languages such as Node.js Expess.js .I have practical
               Experience in designing and developing RESTful APIs and
               integrating for efficient data management.

@@ -16,13 +16,13 @@ const Home = () => {
             scalable web applications using modern technologies.
           </p>
         </div>
-        {/* <button
-          href="Resume"
-          download="RajshishFr.pdf"
+        <button style={{width:"60px" , height:"30px", justifyContent:"center" , display:"flex",alignItems:"center"}}
+          href="/public/resume.pdf"
+          download="RajshishSinghResume.pdf"
           for="Rajshish"
         >
           Resume
-        </button> */}
+        </button>
       </div>
     </div>
   );
