@@ -1,8 +1,7 @@
 import React from "react";
-import devloper from "../../assets/my.avif";
 import star from "../../assets/star.jpg";
 import "./Home.css";
-import Resume from '../../../public/RajshishSinghResume.pdf'
+import Resume from '../../assets/rajshishsingh.pdf'
 
 const Home = () => {
   return (
@@ -24,7 +23,7 @@ const Home = () => {
            <a
             className="homebuttonres"
             href={Resume} // Updated the href attribute
-            download="RajshishSinghResume.pdf"
+            download="rajshishsingh.pdf"
           >
             Download Resume
           </a>
