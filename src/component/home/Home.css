@@ -17,12 +17,20 @@
 }
 
 .homebuttonres {
-  width: 60px;
-  height: 30px;
+  width: 90px;
+  height: 35px;
   justify-content: center;
   border-style: none;
   cursor: pointer;
   align-items: center;
+  margin-top: 10px;
+}
+
+.homebuttonres a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .developer-image {
@@ -96,6 +104,23 @@
   .developer-image {
     height: 250px;
     width: 250px;
+  }
+
+  .homebuttonres {
+    width: 90px;
+    height: 35px;
+    justify-content: center;
+    border-style: none;
+    cursor: pointer;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .homebuttonres a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
   }
   /* .container-home button {
     width: 100%;

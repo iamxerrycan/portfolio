@@ -1,7 +1,7 @@
 import React from "react";
 import star from "../../assets/star.jpg";
 import "./Home.css";
-import Resume from '../../assets/rajshishsingh.pdf'
+import Resume from "../../assets/rajshishsingh.pdf";
 
 const Home = () => {
   return (
@@ -20,13 +20,12 @@ const Home = () => {
             // for="Rajshish"
             className="homebuttonres"
           >
-           <a
-            className="homebuttonres"
-            href={Resume} // Updated the href attribute
-            download="rajshishsingh.pdf"
-          >
-            Download Resume
-          </a>
+            <a
+              href={Resume} // Updated the href attribute
+              download="rajshishsingh.pdf"
+            >
+              Download Resume
+            </a>
           </button>
         </div>
       </div>

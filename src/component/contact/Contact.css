@@ -126,12 +126,12 @@ button {
     width: 100%;
     align-items: center;
   }
-  input {
+  /* input {
     width: auto;
   }
   textarea {
     width: auto;
-  }
+  } */
   .links a {
     margin: 10px;
   }
@@ -155,6 +155,7 @@ button {
   button {
     margin-bottom: 5px;
     margin-left: 50%;
+    border-style: none;
     width: 100px;
     height: 40px;
     border-radius: 5px;
