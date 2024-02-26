@@ -1,6 +1,6 @@
 import React from "react";
 import devloper from "../../assets/my.avif";
-import star from "../../assets/star.jpg"
+import star from "../../assets/star.jpg";
 import "./Home.css";
 //import Resume from '../../../public/resume.pdf'
 
@@ -15,14 +15,17 @@ const Home = () => {
             I'm a passionate developer enthusiastic about building robust and
             scalable web applications using modern technologies.
           </p>
+          <button
+            // href="/public/resume.pdf"
+            // download="RajshishSinghResume.pdf"
+            // for="Rajshish"
+            className="homebuttonres"
+          >
+            <a className="button" href="../../../public/resume.pdf" download>
+              Download Resume
+            </a>
+          </button>
         </div>
-        <button style={{width:"60px" , height:"30px", justifyContent:"center" , display:"flex",alignItems:"center"}}
-          href="/public/resume.pdf"
-          download="RajshishSinghResume.pdf"
-          for="Rajshish"
-        >
-          Resume
-        </button>
       </div>
     </div>
   );

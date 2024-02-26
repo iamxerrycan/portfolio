@@ -16,6 +16,15 @@
   align-items: center;
 }
 
+.homebuttonres {
+  width: 60px;
+  height: 30px;
+  justify-content: center;
+  border-style: none;
+  cursor: pointer;
+  align-items: center;
+}
+
 .developer-image {
   width: 300px;
   height: 300px;
@@ -35,14 +44,20 @@
   background-color: #000000;
 }
 
+.text-container{
+ display: flex; 
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+
 .mydata {
   color: rgb(215, 210, 210);
   text-align: center;
   font-family: sans-serif;
-  
 }
 
-.container-home button {
+/* .container-home button {
   width: 100%;
   border-radius: 5px;
   color: white;
@@ -51,9 +66,7 @@
   height: 40px;
   text-align: center;
   margin-right: 30px;
-}
-
-
+} */
 
 @media screen and (max-width: 768px) {
   .developer-image {
@@ -74,18 +87,17 @@
     overflow: hidden;
     background-color: rgb(0, 0, 0);
     flex-direction: column;
-    
   }
-  .navbar{
+  .navbar {
     display: flex;
     justify-content: space-between;
     margin: 0;
   }
-  .developer-image{
+  .developer-image {
     height: 250px;
     width: 250px;
   }
-  .container-home button {
+  /* .container-home button {
     width: 100%;
     border-radius: 5px;
     color: white;
@@ -94,6 +106,5 @@
     height: 40px;
     text-align: center;
     margin-right: 30px;
-  }
-  
+  } */
 }

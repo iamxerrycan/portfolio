@@ -215,8 +215,7 @@ const Contact = () => {
           </a>
         </div>
         <div className="contact-info">
-          <p>Contact No: +1234567890</p>
-          <p>Email: rajshish333@gmail.com</p>
+           <p>Email: rajshish333@gmail.com</p>
           <p> kolkata saltlake laketown 700048</p>
 
           {/* Add other contact information as needed */}
