@@ -45,14 +45,6 @@ const MyworkData = [
     technologies: ["React", "Node.js", "express", "API"],
     link: "https://www.linkedin.com/posts/activity-7144168109698916352-aof2?utm_source=share&utm_medium=member_android",
   },
-    {
-    name: "Counter",
-    contributors: ["Rajshish"],
-    technologies: ["React", "Hooks", "state"],
-    link: "https://webappcounter.netlify.app",
-    
-  },
-
   
 ];
 
