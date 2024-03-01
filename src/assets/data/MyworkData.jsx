@@ -45,6 +45,12 @@ const MyworkData = [
     technologies: ["React", "Node.js", "express", "API"],
     link: "https://www.linkedin.com/posts/activity-7144168109698916352-aof2?utm_source=share&utm_medium=member_android",
   },
+    {
+    name: "Card-Demo",
+    contributors: ["Rajshish"],
+    technologies: ["html", "css", "Javascript", "jQuery"],
+    link: "https://cart-demoweb.netlify.app/",
+  },
   
 ];
 
