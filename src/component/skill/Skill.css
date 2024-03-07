@@ -157,7 +157,7 @@
   }
   .logo-with-para{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .column , .headpara, .small-logo-line{
