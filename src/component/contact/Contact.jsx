@@ -109,6 +109,7 @@ import About from "../about/About";
 import linkedinIcon from "../../assets/git.png";
 import githubIcon from "../../assets/linkdin.png";
 import npm from "../../assets/images.png";
+import medium from "../../assets/medium.png";
 
 const Contact = () => {
   const contactData = useSelector((state) => state.form.formData);
@@ -212,6 +213,13 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <img src={npm} alt="NPM" className="social-icon" />
+          </a>
+           <a
+            href="https://medium.com/@iamxerrycan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={medium} alt="NPM" className="social-icon" />
           </a>
         </div>
         <div className="contact-info">
