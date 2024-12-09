@@ -1,7 +1,7 @@
 import React from "react";
 import star from "../../assets/star.jpg";
 import "./Home.css";
-import Resume from "../../assets/rajshishsingh.pdf";
+import Resume from "../../../public/resume.pdf";
 
 const Home = () => {
   return (
