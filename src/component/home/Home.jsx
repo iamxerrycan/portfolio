@@ -22,7 +22,7 @@ const Home = () => {
           >
             <a
               href={Resume} // Updated the href attribute
-              download="rajshishsingh.pdf"
+              download="resume.pdf"
             >
               Download Resume
             </a>
