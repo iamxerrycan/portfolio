@@ -1,7 +1,7 @@
-import React from "react";
-import star from "../../assets/star.jpg";
-import "./Home.css";
-import Resume from "../../../public/resume.pdf";
+import React from 'react';
+import star from '../../assets/star.jpg';
+import './Home.css';
+import Resume from '../../assets/rajshishsinghresume.pdf';
 
 const Home = () => {
   return (
@@ -15,14 +15,11 @@ const Home = () => {
             scalable web applications using modern technologies.
           </p>
           <button
-            // href="/public/resume.pdf"
-            // download="RajshishSinghResume.pdf"
-            // for="Rajshish"
             className="homebuttonres"
           >
             <a
-              href={Resume} // Updated the href attribute
-              download="resume.pdf"
+              href={Resume} 
+              download="rajshishsinghresume.pdf"
             >
               Download Resume
             </a>
