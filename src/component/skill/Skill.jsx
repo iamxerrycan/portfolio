@@ -1,23 +1,23 @@
-import React from "react";
-import "./Skill.css";
-import back from "../../assets/backend.jpg";
-import front from "../../assets/frontend.jpg";
-import html from "../../assets/html.svg";
-import css from "../../assets/css.svg";
-import js from "../../assets/js.png";
-import react from "../../assets/react.svg";
-import node from "../../assets/node.svg";
-import tools from "../../assets/tools.jpeg";
-import mongo from "../../assets/mongo.png";
-import express from "../../assets/express.svg";
-import cy from "../../assets/cy.png";
+import React from 'react';
+import './Skill.css';
+import back from '../../assets/backend.jpg';
+import front from '../../assets/frontend.jpg';
+import html from '../../assets/html.svg';
+import css from '../../assets/css.svg';
+import js from '../../assets/js.png';
+import react from '../../assets/react.svg';
+import node from '../../assets/node.svg';
+import tools from '../../assets/tools.jpeg';
+import mongo from '../../assets/mongo.png';
+import express from '../../assets/express.svg';
+import cy from '../../assets/cy.png';
 
 const Skill = () => {
   return (
     <div className="main-skill">
       {/* First Row */}
       <div className="row">
-        <p className="headpara"> Tecknology </p>
+        <p className="headpara"> Technology </p>
         <div className="column">
           <div className="logo-with-para">
             <img src={tools} alt="Skill 1" />
@@ -34,7 +34,7 @@ const Skill = () => {
           <div className="logo-with-para">
             <img src={front} alt="Skill 1" />
             <p>
-              Fron_End : Proficient in creating responsive and intuitive user
+              Front_End : Proficient in creating responsive and intuitive user
               interfaces using HTML, CSS, and JavaScript. Familiar with modern
               front-end libraries and frameworks like React.
             </p>
@@ -57,35 +57,23 @@ const Skill = () => {
         <p className="headpara"> Programming </p>
         <div className="small-logo-line">
           <img src={html} alt="Small skill 1" />
-          <span className="horizontal-line"></span>
-        </div>
-        <div className="small-logo-line">
+
           <img src={css} alt="Small skill 2" />
-          <span className="horizontal-line"></span>
-        </div>
-        <div className="small-logo-line">
+
           <img src={js} alt="Small skill 2" />
-          <span className="horizontal-line"></span>
-        </div>
-        <div className="small-logo-line">
+
           <img src={react} alt="Small skill 2" />
-          <span className="horizontal-line"></span>
-        </div>
-        <div className="small-logo-line">
+
           <img src={node} alt="Small skill 2" />
-          <span className="horizontal-line"></span>
-        </div>
-        <div className="small-logo-line">
+          <img src={mongo} alt="Small skill 2" />
+
           <img
             src={express}
-            style={{ background: "white" }}
+            style={{ background: 'white' }}
             alt="Small skill 2"
           />
-          <span className="horizontal-line"></span>
-        </div>
-        <div className="small-logo-line">
+
           <img src={cy} alt="Small skill 2" />
-          <span className="horizontal-line"></span>
         </div>
       </div>
     </div>

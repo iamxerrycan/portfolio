@@ -32,13 +32,6 @@ const MyworkData = [
   },
 
   {
-    name: 'Dhwani',
-    contributors: ['Rajshish'],
-    technologies: ['Reactjs', '(WIP)'],
-    link: 'https://dhvanee.netlify.app/',
-  },
-
-  {
     name: 'User Management (CRUD)',
     contributors: ['Rajshish'],
     technologies: ['React', 'Node.js', 'express', 'API'],

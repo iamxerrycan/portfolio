@@ -6,6 +6,7 @@
   padding: 10px;
   font-family: sans-serif;
   flex-wrap: wrap;
+  width: auto;
 }
 
 a {
