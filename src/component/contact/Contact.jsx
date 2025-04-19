@@ -15,6 +15,8 @@ const Contact = () => {
 
   const [errors, setErrors] = useState({});
 
+
+
   const validate = () => {
     const errors = {};
     if (!form.name.trim()) errors.name = "Name is required";
@@ -46,6 +48,9 @@ const Contact = () => {
       setForm({ name: "", email: "", message: "" });
       setErrors({});
     }
+    setTimeout(() => {
+      setErrors({});
+    }, 2000);
   };
 
   return (
