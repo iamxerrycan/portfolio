@@ -5,7 +5,6 @@ const MyworkData = [
     technologies: ['React', 'Redux', 'Api-Integration'],
     link: 'https://sign-up-in-auth.netlify.app',
   },
-
   {
     name: 'Weather-App',
     contributors: ['Rajshish'],
@@ -15,40 +14,45 @@ const MyworkData = [
   {
     name: 'NGO project',
     contributors: ['Rajshish'],
-    technologies: ['Reactjs '],
+    technologies: ['Reactjs','javascript','HTML','CSS'],
     link: 'https://jeevan-dhara-org.netlify.app/',
   },
   {
     name: 'Caclulator',
     contributors: ['Rajshish'],
-    technologies: ['Reactjs'],
+    technologies: ['Reactjs', 'hooks'],
     link: 'https://calculator-react-webapp.netlify.app/',
   },
   {
-    name: 'The Unknown',
-    contributors: ['Rajshish'],
-    technologies: ['html', 'css', 'Js'],
-    link: 'https://iamxerrycan.netlify.app',
-  },
-
-  {
     name: 'User Management (CRUD)',
     contributors: ['Rajshish'],
-    technologies: ['React', 'Node.js', 'express', 'API'],
+    technologies: ['React', 'Node.js', 'Express', 'API'],
     link: 'https://www.linkedin.com/posts/activity-7144168109698916352-aof2?utm_source=share&utm_medium=member_android',
   },
   {
     name: 'Card-Demo',
     contributors: ['Rajshish'],
-    technologies: ['html', 'css', 'Javascript', 'jQuery'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
     link: 'https://cart-demoweb.netlify.app/',
   },
   {
     name: 'Task-Manager',
     contributors: ['Rajshish'],
-    technologies: ['html', 'css', 'Javascript', 'react', 'Tailwind'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind'],
     link: 'https://tasklistmanagerr.netlify.app/',
   },
+  {
+    name: 'Dragon Eye - NPM Package',
+    contributors: ['Rajshish'],
+    technologies: ['React', 'NPM'],
+    link: 'https://www.npmjs.com/package/dragon-eye',
+  },
+  {
+    name: 'Appointment Booking API',
+    contributors: ['Rajshish'],
+    technologies: ['Node.js', 'Express.js', 'MongoDB', 'Multer'],
+    link: 'https://rest-api-backend-lad4.onrender.com/api/appointments',
+  }
 ];
 
 export default MyworkData;

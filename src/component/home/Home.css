@@ -38,9 +38,9 @@ html, body {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  border: 3px solid #7f00ff;
+  border: 3px solid #00d8ff;;
   object-fit: cover;
-  box-shadow: 0 0 20px rgba(127, 0, 255, 0.4);
+  box-shadow: 0 0 20px rgba(72, 217, 243, 0.4);
   transition: transform 0.3s ease;
 }
 .developer-image:hover {

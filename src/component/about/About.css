@@ -1,84 +1,73 @@
 .about-container {
-  margin-top: 80px;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-  background-color: black;
-  padding: 10px;
-  height: 110vh;
   flex-wrap: wrap;
-  width: auto;
-}
-
-.about-row {
-  margin-top: 10px;
-  display: flex;
-  flex: 1;
-  box-shadow: 0 0 10px rgba(80, 169, 225, 0.2);
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.about-logo {
-  align-items: center;
-  margin-left: 42px;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  box-shadow: 0 4px 8px rgba(80, 169, 225, 0.2);
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #000;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 80px;
 }
 
 .about-box {
+  background: #111;
+  border-radius: 12px;
   padding: 20px;
-  flex: 1;
-}
-
-.about-box h2 {
-  margin-bottom: 10px;
-}
-
-.about-box p {
-  color: #333;
-}
-.header {
-  color: white;
-  margin-top: 20px;
-  border-bottom: 2px solid #7f0588;
-  display: inline-block;
-  justify-content: center;
-  align-items: center !important;
-  padding-bottom: 5px;
-}
-
-.company-info {
-  color: aliceblue;
+  max-width: 340px;
+  flex: 1 1 300px;
+  box-shadow: 0 4px 16px rgba(0, 255, 255, 0.1);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-bottom: 10px;
-}
-.company-details h3 {
-  margin: 2px 0;
 }
 
-.company-details p {
-  color: #777;
+.about-logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 8px rgba(80, 169, 225, 0.3);
 }
 
-@media screen and (max-width: 480px) {
+.about-header {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 16px;
+  border-bottom: 2px solid #7f0588;
+  padding-bottom: 6px;
+  text-align: center;
+}
+
+.about-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.about-details h3 {
+  margin: 0;
+  color: #00d8ff;
+  font-size: 18px;
+}
+
+.about-details p {
+  margin: 4px 0 0;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
   .about-container {
     flex-direction: column;
-    height: auto;
-    margin: 0;
-    padding: 2px;
-    width: auto;
-    overflow: hidden;
+    align-items: center;
+    padding: 20px 10px;
   }
-  .about-row{
-    padding: 5px;
-  }
-  .form-hold {
-    width: auto;
-    padding: 5px;
+
+  .about-box {
+    width: 90%;
   }
 }
