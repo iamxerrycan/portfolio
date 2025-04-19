@@ -1,3 +1,15 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Base Styles */
 .container {
   display: flex;
   flex-direction: column;
@@ -10,7 +22,7 @@
 
 .work-table {
   flex-wrap: wrap;
-  width: 99%;
+  width: 100%;
   margin-bottom: 10px;
   border-collapse: collapse;
   box-shadow: 0 0 5px rgba(191, 70, 239, 0.7);
@@ -47,50 +59,93 @@
 
 .linkgo {
   color: rgb(255, 255, 255);
+  text-decoration: none;
 }
 
-/* @media screen and (max-width: 480px) {
+/* Mobile-specific Styles */
+@media screen and (max-width: 768px) {
   .container {
-   height: 85vh;
-   width: auto;
-    background-color: rgb(0, 0, 0);
-    padding: 1px;
-  }
-  .work-table {
-    width: auto;
-    height: auto;
-    margin: 0;
-    padding: 1px;
-  }
-  .thead .thtable {
-    width: auto;
-    height: auto;
-  }
-} */
-
-@media screen and (max-width: 480px) {
-  .container {
-    height: 95vh;
-    background-color: rgb(0, 0, 0);
-    padding: 1px;
+    padding: 10px;
+    min-height: 100vh;
+    flex-direction: column;
   }
 
   .work-table {
     margin-top: 15px;
     border-radius: 5px;
-    table-layout: fixed;
+    padding: 10px;
+    table-layout: auto;
   }
 
   .thead .thtable {
-    width: auto;
-    height: auto;
+    font-size: 12px; /* Smaller font for headers */
   }
 
   .same {
-    font-size: 10px; 
-    padding: 4px; 
+    font-size: 10px;
+    padding: 8px;
   }
-  .trtable{
+
+  .trtable {
     width: auto;
   }
+
+  .linkgo {
+    font-size: 12px;
+    padding: 5px;
+  }
 }
+/* Mobile-specific Styles */
+/* @media screen and (max-width: 350px) {
+  .container {
+    padding: 5px;
+    min-height: 100vh;
+    flex-direction: column;
+    overflow-x: auto; 
+
+  .work-table {
+    margin-top: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    table-layout: auto;
+    width: 100%;
+    overflow-x: auto; 
+  }
+
+  .thead .thtable {
+    font-size: 10px; 
+    padding: 8px;
+  }
+
+  .same {
+    font-size: 10px;
+    padding: 6px; 
+    word-wrap: break-word; 
+  }
+
+  .trtable {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px; 
+  }
+
+  .linkgo {
+    font-size: 12px;
+    padding: 5px;
+    text-align: center;
+    display: block;
+  }
+
+  
+  .header {
+    font-size: 16px; 
+    margin-bottom: 15px; 
+    text-align: center;
+  }
+
+  .tbody {
+    display: block; 
+    width: 100%;
+    overflow: auto; 
+  }
+} */
