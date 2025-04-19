@@ -114,7 +114,8 @@ button:hover {
   .container-contact {
     flex-direction: column;
     padding: 20px;
-    height: auto;
+    height: auto; /* Let the height adjust based on content */
+    min-height: 100vh; /* Ensure it takes full screen height */
   }
 
   .form-hold,
@@ -134,6 +135,12 @@ button:hover {
 }
 
 @media screen and (max-width: 480px) {
+  .container-contact {
+    height: auto;
+    min-height: 100vh; /* Ensure the container takes at least full height */
+    flex-direction: column;
+  }
+
   .form-hold {
     margin: 0;
     padding: 30px;

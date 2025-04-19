@@ -11,16 +11,14 @@ const Home = () => {
         <div className="text-container">
           <span className="heading-raj">Hi! I'm Rajshish Singh </span>
           <p className="mydata">
-            I'm a passionate developer enthusiastic about building robust and
-            scalable web applications using modern technologies.
+            I'm Rajshish Singh, a passionate developer focused on building
+            scalable and high-performance web applications using modern
+            technologies. I specialize in React, Node.js, and the MERN stack,
+            and I'm always eager to learn and create innovative solutions that
+            deliver great user experiences.
           </p>
-          <button
-            className="homebuttonres"
-          >
-            <a
-              href={Resume} 
-              download="rajshish2025.pdf"
-            >
+          <button className="homebuttonres">
+            <a href={Resume} download="rajshish2025.pdf">
               Download Resume
             </a>
           </button>
