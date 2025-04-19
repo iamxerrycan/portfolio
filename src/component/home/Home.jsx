@@ -9,7 +9,7 @@ const Home = () => {
       <div className="logo">
         <img src={star} alt="Developer" className="developer-image" />
         <div className="text-container">
-          <span className="heading-raj">Hi! I'm Rajshish Singh</span>
+          <span className="heading-raj">Full Stack Developer | MERN | Passionate Problem Solver</span>
           <p className="mydata">
             I'm Rajshish Singh, a passionate developer focused on building
             scalable and high-performance web applications using modern

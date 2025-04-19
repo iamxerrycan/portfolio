@@ -1,5 +1,6 @@
 import React from 'react';
 import './Skill.css';
+
 import back from '../../assets/backend.jpg';
 import front from '../../assets/frontend.jpg';
 import html from '../../assets/html.svg';
@@ -9,74 +10,59 @@ import react from '../../assets/react.svg';
 import node from '../../assets/node.svg';
 import tools from '../../assets/tools.jpeg';
 import mongo from '../../assets/mongo.png';
-import express from '../../assets/express.svg';
+import express from '../../assets/express-js.png';
+import testing from '../../assets/testing.jpg';
 import cy from '../../assets/cy.png';
+
+const skills = [
+  {
+    title: "Tools",
+    image: tools,
+    description: "Git/GitHub, VS Code, Postman, Jenkins - Essential tools for a developer's workflow.",
+  },
+  {
+    title: "Frontend",
+    image: front,
+    description: "React.js, HTML5, CSS3, JavaScript, Redux, Tailwind CSS - Building responsive, dynamic UIs.",
+  },
+  {
+    title: "Backend",
+    image: back,
+    description: "Node.js, Express.js, MongoDB - Crafting efficient backend services and APIs.",
+  },
+  {
+    title: "Testing",
+    image: testing,
+    description: "Jest, Cypress, Mocha, Chai - Ensuring code reliability through automated testing.",
+  },
+];
+
+const logos = [html, css, js, react, node, mongo, express, cy];
 
 const Skill = () => {
   return (
-    <div className="main-skill">
-      {/* First Row */}
-      <div className="row">
-        <p className="headpara"> Technology </p>
-        <div className="column">
-          <div className="logo-with-para">
-            <img src={tools} alt="Skill 1" />
-            <p>
-              Tools : Version control system for code collaboration and change
-              tracking. VS Code: Highly customizable source code editor for
-              multiple languages. Postman: API development platform for testing
-              and documentation. Chrome DevTools: Browser-based suite for web
-              development and debugging.
-            </p>
+    <section className="skills">
+      <h2 className="skills__title">Skills</h2>
+
+      <div className="skills__grid">
+        {skills.map((skill, idx) => (
+          <div key={idx} className="skills__card">
+            <img src={skill.image} alt={skill.title} className="skills__image" />
+            <h3 className="skills__card-title">{skill.title}</h3>
+            <p className="skills__description">{skill.description}</p>
           </div>
-        </div>
-        <div className="column">
-          <div className="logo-with-para">
-            <img src={front} alt="Skill 1" />
-            <p>
-              Front_End : Proficient in creating responsive and intuitive user
-              interfaces using HTML, CSS, and JavaScript. Familiar with modern
-              front-end libraries and frameworks like React.
-            </p>
-          </div>
-        </div>
-        <div className="column">
-          <div className="logo-with-para">
-            <img src={back} alt="Skill 2" />
-            <p>
-              Back-End: I have knowledge in scalable server-side applications
-              using languages such as Node.js Expess.js .I have practical
-              Experience in designing and developing RESTful APIs and
-              integrating for efficient data management.
-            </p>
-          </div>
-        </div>
+        ))}
       </div>
 
-      <div className="program">
-        <p className="headpara"> Programming </p>
-        <div className="small-logo-line">
-          <img src={html} alt="Small skill 1" />
-
-          <img src={css} alt="Small skill 2" />
-
-          <img src={js} alt="Small skill 2" />
-
-          <img src={react} alt="Small skill 2" />
-
-          <img src={node} alt="Small skill 2" />
-          <img src={mongo} alt="Small skill 2" />
-
-          <img
-            src={express}
-            style={{ background: 'white' }}
-            alt="Small skill 2"
-          />
-
-          <img src={cy} alt="Small skill 2" />
+      <div className="skills__logos">
+        <h2 className="skills__subtitle">Programming Logos</h2>
+        <div className="skills__logo-grid">
+          {logos.map((logo, i) => (
+            <img key={i} src={logo} alt="Skill logo" className="skills__logo" />
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
