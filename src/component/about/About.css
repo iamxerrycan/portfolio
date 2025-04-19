@@ -84,6 +84,7 @@
 
 @media screen and (max-width: 480px) {
   .about-container {
+    height: auto;
     flex-direction: column;
     align-items: center;
     margin-top: 0;
