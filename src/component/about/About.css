@@ -1,7 +1,7 @@
 .about-container {
   margin-top: 80px;
   display: flex;
-  margin-top: 0;
+  margin-top: 80;
   flex-direction: row;
   gap: 20px;
   justify-content: center;
