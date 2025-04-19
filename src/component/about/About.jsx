@@ -8,61 +8,77 @@ const About = () => {
   return (
     <div className="about-container">
       {/* Professional Section */}
-      <div className="about-box">
-        <img src={profession} alt="Professional" className="about-logo" />
-        <h2 className="about-header">Professional</h2>
-        <div className="about-section">
-          <div className="about-details">
-            <h3>Gigaai</h3>
-            <p>
-              Acquired foundational knowledge in web development, including HTML, CSS, and JavaScript. Worked on small-scale web development projects, gaining practical experience.
-            </p>
+      <div className="about-row">
+        <div className="about-box">
+          <img src={profession} alt="Professional Background" className="about-logo" />
+          <h2 className="header">Professional</h2>
+          <div className="company-info">
+            <div className="company-details">
+              <h3>GigaAI</h3>
+              <p>
+      Joined as a Web Development Intern where I built a strong foundation in HTML, CSS, and JavaScript. Gained hands-on experience designing static and responsive web pages while understanding basic UI/UX principles and best practices.
+    </p>
+            </div>
           </div>
-          <div className="about-details">
-            <h3>Focus Research Lab Pvt</h3>
-            <p>
-              Actively participated in bug fixing and debugging processes, enhancing application quality. Conducted E2E testing to ensure overall reliability.
-            </p>
+          <div className="company-info">
+            <div className="company-details">
+              <h3>Focus Research Lab Pvt. Ltd.</h3>
+              <p>
+      Worked as a React.js Developer with additional responsibilities in backend integration and QA testing. Developed and maintained frontend features using React, improved user experience, and collaborated on API development using Node.js and Express. 
+      Also performed end-to-end testing using Cypress, API testing via Postman, and participated in bug reporting to ensure application quality.
+    </p>
+            </div>
           </div>
         </div>
       </div>
 
       {/* Education Section */}
-      <div className="about-box">
-        <img src={student} alt="Education" className="about-logo" />
-        <h2 className="about-header">Education</h2>
-        <div className="about-section">
-          <div className="about-details">
-            <h3>RERF MAKAUT</h3>
-            <p>Computer Science Engineering</p>
+      <div className="about-row">
+        <div className="about-box">
+          <img src={student} alt="Education" className="about-logo" />
+          <h2 className="header">Education</h2>
+          <div className="company-info">
+            <div className="company-details">
+              <h3>RERF (MAKAUT University)</h3>
+              <p>Bachelor of Technology in Computer Science and Engineering (CSE)</p>
+            </div>
           </div>
-          <div className="about-details">
-            <h3>Adarsh Madhyamik Vidyalaya</h3>
-            <p>Higher Secondary (12th)</p>
+          <div className="company-info">
+            <div className="company-details">
+              <h3>Adarsh Madhyamik Vidyalaya</h3>
+              <p>Higher Secondary (12th Grade) - Science Stream</p>
+            </div>
           </div>
-          <div className="about-details">
-            <h3>Adarsh Madhyamik Vidyalaya</h3>
-            <p>Secondary (10th)</p>
+          <div className="company-info">
+            <div className="company-details">
+              <h3>Adarsh Madhyamik Vidyalaya</h3>
+              <p>Secondary (10th Grade)</p>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Hobby Section */}
-      <div className="about-box">
-        <img src={hobby} alt="Hobbies" className="about-logo" />
-        <h2 className="about-header">Hobbies</h2>
-        <div className="about-section">
-          <div className="about-details">
-            <h3>Cricket</h3>
-            <p>
-              I thoroughly enjoy playing cricket. It's thrilling, relaxing, and keeps me active.
-            </p>
+      {/* Hobbies Section */}
+      <div className="about-row">
+        <div className="about-box">
+          <img src={hobby} alt="Hobbies and Interests" className="about-logo" />
+          <h2 className="header">Hobbies</h2>
+         
+          <div className="company-info">
+            <div className="company-details">
+              <h3>Travel</h3>
+              <p>
+                I love exploring new places and cultures. Traveling teaches me adaptability and fills me with new inspiration.
+              </p>
+            </div>
           </div>
-          <div className="about-details">
-            <h3>Travel</h3>
-            <p>
-              I have a deep passion for travel and exploring new places and cultures. It's a truly enriching experience.
-            </p>
+          <div className="company-info">
+            <div className="company-details">
+              <h3>Coding & Building Projects</h3>
+              <p>
+                I enjoy creating modern web applications using MERN stack and exploring new tools, packages, and APIs to improve user experience.
+              </p>
+            </div>
           </div>
         </div>
       </div>

@@ -19,7 +19,13 @@ const Contact = () => {
 
   const validate = () => {
     const errors = {};
-    if (!form.name.trim()) errors.name = "Name is required";
+    if (!form.name.trim()) {
+      errors.name = 'Name is required';
+    } else if (form.name.length < 3) {
+      errors.name = 'Name must be at least 3 characters long';
+    } else if (!/^[a-zA-Z\s]+$/.test(form.name)) {
+      errors.name = 'Name can only contain letters and spaces';
+    }
     if (!form.email.trim()) {
       errors.email = "Email is required";
     } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
