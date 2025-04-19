@@ -11,32 +11,36 @@ const Navbar = () => {
     setShowNavbar(!showNavbar);
   };
 
+  const handleLinkClick = () => {
+    setShowNavbar(false); 
+  };
+
   return (
     <div className="navbar">
       <div className="navbar-header">
-        {/* <Link to="/"> */}
-          <img id="mylogo" src={logo} alt="" />
-        {/* </Link> */}
-        <div className="toggle-icon" onClick={toggleNavbar}>
-          <FaBars />
-        </div>
+        <img id="mylogo" src={logo} alt="Logo" />
       </div>
-      <div className={`navbar-links ${showNavbar ? "active" : ""}`}>
-        <Link to="/">
-          <a id="navText">Home</a>
+      <div
+        className={`navbar-links ${showNavbar ? "active" : ""}`}
+      >
+        <Link to="/" onClick={handleLinkClick}>
+          <span className="nav-link">Home</span>
         </Link>
-        <Link to="/About">
-          <a id="navText">About</a>
+        <Link to="/About" onClick={handleLinkClick}>
+          <span className="nav-link">About</span>
         </Link>
-        <Link to="/Skill">
-          <a id="navText">Skill</a>
+        <Link to="/Skill" onClick={handleLinkClick}>
+          <span className="nav-link">Skill</span>
         </Link>
-        <Link to="/MyworkPage">
-          <a id="navText">Work</a>
+        <Link to="/MyworkPage" onClick={handleLinkClick}>
+          <span className="nav-link">Work</span>
         </Link>
-        <Link to="/Contact">
-          <a id="navText">Contact</a>
+        <Link to="/Contact" onClick={handleLinkClick}>
+          <span className="nav-link">Contact</span>
         </Link>
+      </div>
+      <div className="toggle-icon" onClick={toggleNavbar}>
+        <FaBars />
       </div>
     </div>
   );

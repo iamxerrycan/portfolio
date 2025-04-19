@@ -23,6 +23,7 @@ html, body {
 .form-hold {
   background-color: #fff;
   width: 400px;
+  margin-top: 20px;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);

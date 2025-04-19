@@ -2,7 +2,7 @@ import React from "react";
 import profession from "../../assets/profession.jpg";
 import student from "../../assets/student.jpg";
 import hobby from "../../assets/hobby.png";
-import "./About.css"; // Import CSS file for styling
+import "./About.css"; 
 
 const About = () => {
   return (

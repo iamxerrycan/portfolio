@@ -1,6 +1,5 @@
 import React from "react";
 import "./Mywork.css";
-import MyworkPage from "../../page/mywork/MyworkPage";
 
 const Mywork = ({ projects }) => {
   return (
@@ -21,9 +20,14 @@ const Mywork = ({ projects }) => {
               <td className="same">{data.contributors.join(", ")}</td>
               <td className="same">{data.technologies.join(", ")}</td>
               <td className="same">
-                <a href={data.link} target="_blank" rel="no" className="linkgo">
+                <a
+                  href={data.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="linkgo"
+                >
                   GoTo{" "}
-                </a>{" "}
+                </a>
               </td>
             </tr>
           ))}
@@ -34,8 +38,3 @@ const Mywork = ({ projects }) => {
 };
 
 export default Mywork;
-
-//   {/* Use the link prop in the child component */}
-//   <a href={link} target="_blank" rel="noopener noreferrer">
-//   Go to external link
-// </a>

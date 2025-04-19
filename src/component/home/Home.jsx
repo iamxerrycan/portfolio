@@ -1,7 +1,7 @@
 import React from 'react';
-import star from '../../assets/star.jpg'; // Make sure this path is correct
+import star from '../../assets/star.jpg';
 import './Home.css';
-import Resume from '../../assets/rajshish2025.pdf'; // Make sure this path is correct
+import Resume from '../../assets/rajshish2025.pdf';
 
 const Home = () => {
   return (
@@ -9,14 +9,15 @@ const Home = () => {
       <div className="logo">
         <img src={star} alt="Developer" className="developer-image" />
         <div className="text-container">
-          <span className="heading-raj">Full Stack Developer | MERN | Passionate Problem Solver</span>
+          <h1 className="heading-raj">Rajshish Singh</h1>
+          <h2 className="sub-heading">Full Stack Developer | MERN | QA Automation Enthusiast</h2>
           <p className="mydata">
-            I'm Rajshish Singh, a passionate developer focused on building
-            scalable and high-performance web applications using modern
-            technologies. I specialize in React, Node.js, and the MERN stack,
-            and I'm always eager to learn and create innovative solutions that
-            deliver great user experiences.
-          </p>
+  I build fast, scalable web apps using the MERN stack. I love solving real-world problems with clean code and efficient design.
+</p>
+<p className="mydata">
+  From crafting responsive React UIs to building robust Node.js APIs, I bring ideas to life—tested, reliable, and ready to scale.
+</p>
+
           <button className="homebuttonres">
             <a href={Resume} download="rajshish2025.pdf">
               Download Resume
