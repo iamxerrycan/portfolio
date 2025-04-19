@@ -51,7 +51,17 @@ const MyworkData = [
     name: 'Appointment Booking API',
     contributors: ['Rajshish'],
     technologies: ['Node.js', 'Express.js', 'MongoDB', 'Multer'],
-    link: 'https://rest-api-backend-lad4.onrender.com/api/appointments',
+    link: 'https://github.com/iamxerrycan/restAPI-database',
+  },{
+    name: 'Weather APK',
+    contributors: ['Rajshish'],
+    technologies: ['react-native', 'expo'],
+    link: 'https://www.linkedin.com/posts/iamxerrycan_reactnative-weatherapp-minimalistdesign-activity-7252937088461885440-wHzC?utm_source=share&utm_medium=member_android&rcm=ACoAAELy3KUBB2gh0eXSgGMUASe_jf79rYjsta4',
+  },{
+    name: 'Testing CI/CD',
+    contributors: ['Rajshish'],
+    technologies: ['Cypress', 'Jest', 'Mocha', 'Chai'],
+    link: 'https://github.com/iamxerrycan/CICD-QA',
   }
 ];
 
