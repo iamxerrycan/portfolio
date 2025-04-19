@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,13 +17,13 @@ html, body {
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 20px;
+  padding: 50px;
   min-height: 100vh;
 }
 
 .form-hold {
   background-color: #fff;
-  width: 350px;
+  width: 400px;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
@@ -168,8 +168,20 @@ button:hover {
 @media screen and (max-width: 480px) {
   .container-contact {
     padding: 10px;
+    padding-top: 20px;
     min-height: 100vh;
     flex-direction: column;
+  }
+
+  .form{
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  .form input ,textarea
+  {
+    width: 98%;
   }
 
   .form-hold {
