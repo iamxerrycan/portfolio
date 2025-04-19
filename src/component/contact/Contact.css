@@ -17,7 +17,6 @@ html, body {
   align-items: center;
   flex-wrap: wrap;
   gap: 40px;
-  padding: 50px;
   min-height: 100vh;
 }
 
@@ -136,7 +135,6 @@ button:hover {
 @media screen and (max-width: 768px) {
   .container-contact {
     flex-direction: column;
-    padding: 20px;
     height: auto;
     min-height: 100vh;
   }
@@ -167,8 +165,6 @@ button:hover {
 
 @media screen and (max-width: 480px) {
   .container-contact {
-    padding: 10px;
-    padding-top: 20px;
     min-height: 100vh;
     flex-direction: column;
   }
