@@ -5,6 +5,7 @@ import linkedinIcon from "../../assets/git.png";     // GitHub icon
 import githubIcon from "../../assets/linkdin.png";   // LinkedIn icon
 import npm from "../../assets/images.png";
 import medium from "../../assets/medium.png";
+import axios from "axios";
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -14,8 +15,6 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
-
-
 
   const validate = () => {
     const errors = {};
@@ -31,7 +30,9 @@ const Contact = () => {
     } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
       errors.email = "Invalid email format";
     }
-    if (!form.message.trim()) errors.message = "Message is required";
+    if (!form.message.trim()) {
+      errors.message = "Message is required";
+    }
 
     setErrors(errors);
     return Object.keys(errors).length === 0;
@@ -47,16 +48,37 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    console.log("🚀 Form data to be submitted:", form);
+
     if (validate()) {
-      toast.success("Message sent successfully! 🚀");
-      setForm({ name: "", email: "", message: "" });
-      setErrors({});
+      try {
+        const res = await axios.post(
+          "https://rest-api-backend-lad4.onrender.com/api/contact",
+          form
+        );
+
+        console.log("✅ API response:", res.data);
+
+        if (res.status === 200) {
+          toast.success("Message sent successfully! 🚀");
+          setForm({ name: "", email: "", message: "" });
+          setErrors({});
+        } else {
+          toast.error("Something went wrong, try again!");
+        }
+      } catch (error) {
+        console.error("❌ API Error:", error.response?.data || error.message);
+        toast.error("Error sending message. Please try again later.");
+      }
+    } else {
+      console.warn("⚠️ Form validation failed");
     }
+
     setTimeout(() => {
       setErrors({});
-    }, 2000);
+    }, 3000);
   };
 
   return (
