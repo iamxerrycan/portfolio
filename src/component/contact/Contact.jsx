@@ -42,7 +42,6 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validate()) {
-      
       toast.success("Message sent successfully! 🚀");
       setForm({ name: "", email: "", message: "" });
       setErrors({});
