@@ -114,7 +114,7 @@ html, body {
 @media screen and (max-width: 480px) {
   .container-home {
     padding: 10px;
-    height: auto;
+    height: 100vh;
     min-height: auto; /* Let content adjust naturally */
   }
 
