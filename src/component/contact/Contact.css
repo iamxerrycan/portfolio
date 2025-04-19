@@ -11,13 +11,12 @@ html, body {
 
 /* Base Styles */
 .container-contact {
-  background-color: #000;
+  background-color: #1c1c1c;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   padding: 20px;
-  gap: 40px;
   min-height: 100vh;
 }
 
@@ -25,8 +24,13 @@ html, body {
   background-color: #fff;
   width: 350px;
   padding: 40px;
-  border-radius: 10px;
-  box-shadow: 0 0 15px rgba(80, 169, 225, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.form-hold:hover {
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
 .form {
@@ -38,20 +42,23 @@ input,
 textarea {
   margin: 10px 0;
   padding: 12px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+  border-radius: 20px;
+  border: 2px solid #ddd;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 input:focus,
 textarea:focus {
   border-color: #007bff;
   outline: none;
+  background-color: #e9f3ff;
 }
 
 textarea {
   resize: none;
-  min-height: 100px;
+  min-height: 120px;
 }
 
 button {
@@ -60,13 +67,15 @@ button {
   border: none;
   padding: 12px;
   margin-top: 15px;
-  border-radius: 5px;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 16px;
+  transition: all 0.3s ease;
 }
 
 button:hover {
-  opacity: 0.9;
+  transform: scale(1.05);
+  box-shadow: 0 5px 20px rgba(80, 169, 225, 0.2);
 }
 
 .error {
@@ -74,6 +83,7 @@ button:hover {
   font-size: 12px;
   margin-top: -8px;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .contact-title {
@@ -97,7 +107,7 @@ button:hover {
 .links {
   display: flex;
   justify-content: center;
-  gap: 15px;
+  gap: 20px;
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
@@ -157,7 +167,7 @@ button:hover {
 @media screen and (max-width: 480px) {
   .container-contact {
     padding: 10px;
-    min-height: auto;
+    min-height: 100vh;
     flex-direction: column;
   }
 
@@ -165,24 +175,5 @@ button:hover {
     margin: 0;
     padding: 20px;
     width: 100%;
-    height: auto;
-  }
-
-  .social-icon {
-    width: 35px;
-    height: 35px;
-  }
-
-  .contact-info p {
-    font-size: 14px;
-  }
-
-  button {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  input, textarea {
-    font-size: 15px;
   }
 }
