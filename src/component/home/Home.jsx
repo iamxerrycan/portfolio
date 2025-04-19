@@ -1,7 +1,7 @@
 import React from 'react';
-import star from '../../assets/star.jpg';
+import star from '../../assets/star.jpg'; // Make sure this path is correct
 import './Home.css';
-import Resume from '../../assets/rajshish2025.pdf';
+import Resume from '../../assets/rajshish2025.pdf'; // Make sure this path is correct
 
 const Home = () => {
   return (
@@ -9,7 +9,7 @@ const Home = () => {
       <div className="logo">
         <img src={star} alt="Developer" className="developer-image" />
         <div className="text-container">
-          <span className="heading-raj">Hi! I'm Rajshish Singh </span>
+          <span className="heading-raj">Hi! I'm Rajshish Singh</span>
           <p className="mydata">
             I'm Rajshish Singh, a passionate developer focused on building
             scalable and high-performance web applications using modern
@@ -29,5 +29,3 @@ const Home = () => {
 };
 
 export default Home;
-
-
