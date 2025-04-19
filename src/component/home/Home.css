@@ -1,10 +1,11 @@
+/* Base Styles */
 .container-home {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
+  height: 100vh; /* Full screen height */
   background-color: #000000;
   padding: 20px;
 }
@@ -67,7 +68,12 @@
   background-color: #e100ff;
 }
 
+/* Mobile adjustments */
 @media screen and (max-width: 768px) {
+  .container-home {
+    padding: 15px; /* Slightly reduced padding */
+  }
+
   .developer-image {
     width: 250px;
     height: 250px;
@@ -85,8 +91,8 @@
 
 @media screen and (max-width: 480px) {
   .container-home {
-    height: auto;
-    padding: 10px;
+    height: auto; /* Let content adjust naturally */
+    padding: 10px; /* Reduced padding for mobile */
   }
 
   .developer-image {
