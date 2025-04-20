@@ -15,6 +15,7 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
+  const [loading, setLoading] = useState(false); // loading state
 
   const validate = () => {
     const errors = {};
@@ -52,28 +53,33 @@ const Contact = () => {
     e.preventDefault();
     console.log("🚀 Form data to be submitted:", form);
 
-    if (validate()) {
-      try {
-        const res = await axios.post(
-          "https://rest-api-backend-lad4.onrender.com/api/contact",
-          form
-        );
-
-        console.log("✅ API response:", res.data);
-
-        if (res.status === 200) {
-          toast.success("Message sent successfully! 🚀");
-          setForm({ name: "", email: "", message: "" });
-          setErrors({});
-        } else {
-          toast.error("Something went wrong, try again!");
-        }
-      } catch (error) {
-        console.error("❌ API Error:", error.response?.data || error.message);
-        toast.error("Error sending message. Please try again later.");
-      }
-    } else {
+    if (!validate()) {
       console.warn("⚠️ Form validation failed");
+      return;
+    }
+
+    setLoading(true); // start loading
+
+    try {
+      const res = await axios.post(
+        "https://rest-api-backend-lad4.onrender.com/api/contact",
+        form
+      );
+
+      console.log("✅ API response:", res.data);
+
+      if (res.status === 200) {
+        toast.success("Message sent successfully! 🚀");
+        setForm({ name: "", email: "", message: "" });
+        setErrors({});
+      } else {
+        toast.error("Something went wrong, try again!");
+      }
+    } catch (error) {
+      console.error("❌ API Error:", error.response?.data || error.message);
+      toast.error("Error sending message. Please try again later.");
+    } finally {
+      setLoading(false); // stop loading
     }
 
     setTimeout(() => {
@@ -111,7 +117,15 @@ const Contact = () => {
           />
           {errors.message && <span className="error">{errors.message}</span>}
 
-          <button type="submit">Send</button>
+          <button type="submit" disabled={loading} className={`submit-btn ${loading ? "disabled" : ""}`}>
+            {loading ? (
+              <>
+                <span className="spinner" /> Sending...
+              </>
+            ) : (
+              "Send"
+            )}
+          </button>
         </form>
       </div>
 
