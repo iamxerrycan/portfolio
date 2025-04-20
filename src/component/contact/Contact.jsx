@@ -81,11 +81,11 @@ const Contact = () => {
     } finally {
       setLoading(false); // stop loading
     }
-
-    setTimeout(() => {
-      setErrors({});
-    }, 3000);
   };
+
+  setTimeout(() => {
+    setErrors({});
+  }, 2000);
 
   return (
     <div className="container-contact">
