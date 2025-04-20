@@ -1,0 +1,49 @@
+/* src/SplashScreen.css */
+.splash-bg {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.logo h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00f0ff, #00ffa1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.4);
+}
+
+.subtext {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #aaa;
+  opacity: 0.8;
+}
+
+
+/* Responsive for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .splash-bg h1 {
+    font-size: 2.5rem;
+  }
+  .subtext {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive for mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .splash-bg h1 {
+    font-size: 2rem;
+  }
+  .subtext {
+    font-size: 1rem;
+  }
+}
