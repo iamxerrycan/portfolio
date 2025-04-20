@@ -10,21 +10,16 @@ function App() {
     <BrowserRouter>
       
       <Navbar />
-      <ToastContainer    position="top-center"
-        autoClose={3000}
-        hideProgressBar={false}
-        closeOnClick
-        pauseOnHover
-        draggable
-        progress={undefined}
-        style={{
-          backgroundColor: 'rgba(0, 0, 0, 0.8)',
-          color: 'green',
-          fontSize: '14px',
-          maxWidth: '300px',
-          maxHeight:"50px",
-          borderRadius: "20px"
-        }}/>
+      <ToastContainer
+  position="top-center"
+  autoClose={3000}
+  hideProgressBar={false}
+  closeOnClick
+  pauseOnHover
+  draggable
+  progress={undefined}
+  toastClassName="custom-toast"
+/>
       <AllRoutes />
       <Footer className="footer" />
     </BrowserRouter>
