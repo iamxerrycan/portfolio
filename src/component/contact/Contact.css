@@ -132,3 +132,24 @@ button:hover {
   text-shadow: 0 0 5px rgba(0, 52, 73, 0.7);
 }
 
+.spinner {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #3498db;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  animation: spin 0.8s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+button.submit-btn.disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
