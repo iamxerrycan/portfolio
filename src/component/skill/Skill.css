@@ -46,14 +46,18 @@
   height: 80px;
   object-fit: contain;
   margin-bottom: 20px;
+  border-radius: 50%; /* 🔁 Makes it round */
+  background-color: #fff; /* Optional for better visual */
+  padding: 6px; /* Optional spacing */
 }
+
 
 /* Card title */
 .skills__card-title {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: #7f0588;
+  color: #50a9e1;
 }
 
 /* Description text */
@@ -132,11 +136,14 @@
     height: 70px;
   }
 }
-
-/* Mobile phones */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .skills {
     margin-top: 0;
+  }
+
+  .skills__card {
+    padding: 6px;
+    margin: 0;
   }
 
   .skills__title {
@@ -165,5 +172,13 @@
   .skills__image {
     width: 60px;
     height: 60px;
+  }
+
+  /* ✅ Add this block */
+  .skills__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 10px;
   }
 }

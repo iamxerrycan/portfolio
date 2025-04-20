@@ -55,7 +55,7 @@ const Skill = () => {
       </div>
 
       <div className="skills__logos">
-        <h2 className="skills__subtitle">Programming Logos</h2>
+        <h2 className="skills__subtitle">Programming</h2>
         <div className="skills__logo-grid">
           {logos.map((logo, i) => (
             <img key={i} src={logo} alt="Skill logo" className="skills__logo" />

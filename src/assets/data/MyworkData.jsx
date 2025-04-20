@@ -6,7 +6,7 @@ const MyworkData = [
     link: 'https://sign-up-in-auth.netlify.app',
   },
   {
-    name: 'Weather-App',
+    name: 'Weather-Web',
     contributors: ['Rajshish'],
     technologies: ['React', 'Api-Integration'],
     link: 'https://weather-cities-x.netlify.app/',
