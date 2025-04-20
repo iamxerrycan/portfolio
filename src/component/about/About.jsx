@@ -24,8 +24,8 @@ const About = () => {
             <div className="company-details">
               <h3>Focus Research Lab Pvt. Ltd.</h3>
               <p>
-      Worked as a React.js Developer with additional responsibilities in backend integration and QA testing. Developed and maintained frontend features using React, improved user experience, and collaborated on API development using Node.js and Express. 
-      Also performed end-to-end testing using Cypress, API testing via Postman, and participated in bug reporting to ensure application quality.
+      Worked as a React.js Developer with additional responsibilities in backend integration and QA testing. Developed and maintained frontend features using React, and collaborated on API development using Node.js and Express. 
+      Also performed end-to-end testing using Cypress, API testing via Postman, to ensure application quality.
     </p>
             </div>
           </div>
