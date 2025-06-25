@@ -56,7 +56,7 @@ const MyworkData = [
     name: 'Weather APK',
     contributors: ['Rajshish'],
     technologies: ['react-native', 'expo'],
-    link: 'https://www.linkedin.com/posts/iamxerrycan_reactnative-weatherapp-minimalistdesign-activity-7252937088461885440-wHzC?utm_source=share&utm_medium=member_android&rcm=ACoAAELy3KUBB2gh0eXSgGMUASe_jf79rYjsta4',
+    link: 'https://expo.dev/accounts/iamxerrycan/projects/minimalist-weather/builds/1c4f3f6d-14b2-4962-9d97-bd4baff4e2f4',
   },{
     name: 'Testing CI/CD',
     contributors: ['Rajshish'],
