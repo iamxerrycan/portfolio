@@ -56,7 +56,7 @@ const MyworkData = [
     name: 'Weather APK',
     contributors: ['Rajshish'],
     technologies: ['react-native', 'expo'],
-    link: 'https://expo.dev/accounts/iamxerrycan/projects/minimalist-weather/builds/1c4f3f6d-14b2-4962-9d97-bd4baff4e2f4',
+    link: 'https://expo.dev/accounts/iamxerrycan/projects/minimalist-weather/builds/771cc2bd-728b-429f-8fe2-e748558bc05c',
   },{
     name: 'Testing CI/CD',
     contributors: ['Rajshish'],
