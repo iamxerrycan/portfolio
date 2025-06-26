@@ -56,7 +56,7 @@ const MyworkData = [
     name: 'Weather APK',
     contributors: ['Rajshish'],
     technologies: ['react-native', 'expo'],
-    link: 'https://expo.dev/accounts/iamxerrycan/projects/minimalist-weather/builds/771cc2bd-728b-429f-8fe2-e748558bc05c',
+    link: 'https://expo.dev/accounts/iamxerrycan/projects/minimalist-weather/builds/92de3764-7247-4535-b79f-db040179ffa8',
   },{
     name: 'Testing CI/CD',
     contributors: ['Rajshish'],
@@ -66,7 +66,7 @@ const MyworkData = [
     name: 'Silent Zone',
     contributors: ['Rajshish'],
     technologies: ['react-native', 'expo'],
-    link: 'https://expo.dev/accounts/iamxerrycan/projects/auto-silent-app/builds/4b290e52-7ab8-4ced-90f1-cf441a90b43a',
+    link: 'https://expo.dev/accounts/iamxerrycan/projects/auto-silent-app/builds/d8b21ef6-228e-4614-b2ed-6acaa7d296a2',
   }
 ];
 
