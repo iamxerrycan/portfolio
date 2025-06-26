@@ -62,6 +62,11 @@ const MyworkData = [
     contributors: ['Rajshish'],
     technologies: ['Cypress', 'Jest', 'Mocha', 'Chai'],
     link: 'https://github.com/iamxerrycan/CICD-QA',
+  },{
+    name: 'Silent Zone',
+    contributors: ['Rajshish'],
+    technologies: ['react-native', 'expo'],
+    link: 'https://expo.dev/accounts/iamxerrycan/projects/auto-silent-app/builds/4b290e52-7ab8-4ced-90f1-cf441a90b43a',
   }
 ];
 
