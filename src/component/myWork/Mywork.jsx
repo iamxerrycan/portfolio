@@ -1,39 +1,65 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Mywork.css";
+import Modal from "./ProjectModel";
+
+const categories = ["All", "Frontend", "Backend", "Mobile App", "Testing","Full-Stack", "NPM Package"];
 
 const Mywork = ({ projects }) => {
+  const [activeCategory, setActiveCategory] = useState("All");
+  const [selectedProject, setSelectedProject] = useState(null);
+
+  const filteredProjects =
+    activeCategory === "All"
+      ? projects
+      : projects.filter((p) => p.category === activeCategory);
+
   return (
-    <div className="container">
-      <table className="work-table">
-        <thead className="thead">
-          <tr className="trtable">
-            <th className="same">Project Name</th>
-            <th className="same">Contributer</th>
-            <th className="same">Technology</th>
-            <th className="same">Link</th>
-          </tr>
-        </thead>
-        <tbody className="tbody">
-          {projects.map((data, index) => (
-            <tr key={index} className="trtable">
-              <td className="same">{data.name}</td>
-              <td className="same">{data.contributors.join(", ")}</td>
-              <td className="same">{data.technologies.join(", ")}</td>
-              <td className="same">
-                <a
-                  href={data.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="linkgo"
-                >
-                  GoTo{" "}
-                </a>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
+    <section className="mywork-section">
+      <h2 className="mywork-title">My Projects</h2>
+
+      <div className="category-buttons">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            className={`cat-btn ${cat === activeCategory ? "active" : ""}`}
+            onClick={() => setActiveCategory(cat)}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      <div className="project-grid">
+        {filteredProjects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <div className="project-img-wrapper">
+              <img src={project.image} alt={project.name} className="project-img" />
+              <span className={`status-badge ${project.status || "complete"}`}>
+                {project.status || "Complete"}
+              </span>
+            </div>
+            <div className="project-content">
+              <h3 className="project-name">{project.name}</h3>
+              <p className="project-desc">{project.description}</p>
+              <div className="project-tech">
+                {project.technologies.map((tech, i) => (
+                  <span className="tech-tag" key={i}>{tech}</span>
+                ))}
+              </div>
+              <div className="project-links">
+                {/* <a href={project.link} target="_blank">Live</a>
+                <a href={project.github} target="_blank">GitHub</a> */}
+                <button onClick={() => setSelectedProject(project)}>View Details</button>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {selectedProject && (
+        <Modal project={selectedProject} onClose={() => setSelectedProject(null)} />
+      )}
+    </section>
   );
 };
 

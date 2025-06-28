@@ -1,162 +1,171 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html, body {
-  font-family: 'Arial', sans-serif;
-}
-
-/* Base Styles */
-.container {
-  display: flex;
-  flex-direction: column;
-  font-family: Arial, sans-serif;
-  border: 1px solid #000000;
-  height: 100vh;
-  background-color: #000000;
-  padding: 20px;
-  margin-top: 80px; /* Push content down to avoid navbar overlap */
-}
-
-.work-table {
-  flex-wrap: wrap;
-  width: 100%;
-  margin-bottom: 10px;
-  border-collapse: collapse;
-  box-shadow: 0 0 5px rgba(191, 70, 239, 0.7);
-  border-radius: 5px;
-  overflow: hidden;
-  background-color: #000000;
-}
-
-.header {
+/* Main Section */
+.mywork-section {
+  padding: 120px 20px;
+  background: #000;
+  color: white;
   text-align: center;
-  margin: 5px;
-  font-size: 18px;
 }
 
-.thead {
-  background-image: linear-gradient(to right, #7f00ff, #e100ff);
-  color: white;
-}
-
-.same {
-  padding: 12px;
-  text-align: left;
-  color: white;
-  border-bottom: 1px solid #ffffff;
-}
-
-.thtable {
+/* Title */
+.mywork-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #23d8ba;
   font-weight: bold;
 }
 
-.tdtable:last-child {
-  text-align: center;
+/* Category Filter Buttons */
+.category-buttons {
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
 }
 
-/* Link Button Styling */
-.linkgo {
-  color: #fff;
-  text-decoration: none;
-  padding: 8px 15px;
+.cat-btn {
+  padding: 8px 16px;
+  border: none;
+  background-color: #222;
+  color: white;
   border-radius: 5px;
-  background-color: #7f00ff; 
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: 0.3s;
 }
 
-.linkgo:hover {
-  background-color: #e100ff;
+.cat-btn.active,
+.cat-btn:hover {
+  background-color: #23d8ba;
+  color: black;
+}
+
+/* Project Card Grid */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Project Card */
+.project-card {
+  background: #111;
+  width: 300px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Image Section */
+.project-img-wrapper {
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Status Badge */
+.status-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #00ffaa;
+  color: #000;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.status-badge.complete {
+  background-color: #00ff99;
+}
+
+.status-badge.wip {
+  background-color: #ffcc00;
+}
+
+/* Card Content */
+.project-content {
+  padding: 15px;
+  text-align: left;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  color: #23d8ba;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin: 10px 0;
+}
+
+/* Tech Stack Tags */
+.project-tech {
+  margin: 10px 0;
+}
+
+.tech-tag {
+  background-color: #333;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin: 2px;
+  display: inline-block;
+}
+
+/* Links Section */
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.project-links a,
+.project-links button {
+  background: linear-gradient(to right, #23d8ba, #00ffe1);
+  color: black;
   text-decoration: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 255, 200, 0.2);
+  cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
-    margin: 0;
-  }
-
-  .work-table {
-    margin-top: 15px;
-    border-radius: 5px;
-    padding: 10px;
-    table-layout: auto;
-    width: auto;
-  }
-
-  .thead .thtable {
-    font-size: 12px; /* Smaller font for headers */
-  }
-
-  .same {
-    font-size: 10px;
-    padding: 8px;
-  }
-
-  .trtable {
-    width: auto;
-  }
-
-  .linkgo {
-    font-size: 12px;
-    padding: 5px;
-  }
+.project-links a:hover,
+.project-links button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #2afdd6, #08fdd8);
 }
 
-/* Mobile-specific Styles for Small Screens */
-@media screen and (max-width: 350px) {
-  .container {
-    padding: 5px;
-    min-height: 100vh;
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .project-card {
+    width: 90%;
+  }
+
+  .project-links {
     flex-direction: column;
-    overflow-x: auto;
+    gap: 10px;
   }
 
-  .work-table {
-    margin-top: 15px;
-    border-radius: 5px;
-    padding: 5px;
-    table-layout: auto;
+  .project-links a,
+  .project-links button {
     width: 100%;
-    overflow-x: auto;
-  }
-
-  .thead .thtable {
-    font-size: 10px;
-    padding: 8px;
-  }
-
-  .same {
-    font-size: 10px;
-    padding: 6px;
-    word-wrap: break-word;
-  }
-
-  .trtable {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  .linkgo {
-    font-size: 12px;
-    padding: 5px;
     text-align: center;
-    display: block;
-  }
-
-  .header {
-    font-size: 16px;
-    margin-bottom: 15px;
-    text-align: center;
-  }
-
-  .tbody {
-    display: block;
-    width: 100%;
-    overflow: auto;
   }
 }
