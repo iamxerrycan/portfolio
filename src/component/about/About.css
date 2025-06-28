@@ -106,12 +106,12 @@
 }
 @media screen and (max-width: 480px) {
   .about-container {
-    padding: 15px 10px;
+    padding: 30px 10px;
   }
 
   .about-row {
     max-width: 100%;
-    width: 100%;
+    width: 90%;
   }
 
   .about-box {

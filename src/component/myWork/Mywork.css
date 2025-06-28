@@ -18,9 +18,19 @@
 .category-buttons {
   margin-bottom: 30px;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  text-align: center;
   gap: 12px;
+  overflow-x: auto;                     /* 👈 Horizontal scroll */
+  -webkit-overflow-scrolling: touch;   /* 👈 Smooth mobile scroll */
+  padding: 10px 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;               /* Firefox */
+}
+
+.category-buttons::-webkit-scrollbar {
+  display: none;                       /* Hide scrollbar */
 }
 
 .cat-btn {
@@ -31,6 +41,10 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
+  white-space: nowrap;                /* 👈 Prevent text wrap */
+  scroll-snap-align: start;
+  font-size: 0.9rem;
+  flex: 0 0 auto;
 }
 
 .cat-btn.active,
@@ -167,5 +181,17 @@
   .project-links button {
     width: 100%;
     text-align: center;
+  }
+
+  .mywork-section{
+    padding: 40px 10px;
+  }
+  .mywork-title {
+    font-size: 1.6rem;
+  }
+
+  .cat-btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
   }
 }

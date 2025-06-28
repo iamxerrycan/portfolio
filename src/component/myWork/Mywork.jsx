@@ -18,6 +18,7 @@ const Mywork = ({ projects }) => {
       <h2 className="mywork-title">My Projects</h2>
 
       <div className="category-buttons">
+        
         {categories.map((cat) => (
           <button
             key={cat}
