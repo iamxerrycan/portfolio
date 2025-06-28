@@ -7,10 +7,12 @@
 }
 
 .tool-slider-title {
-  font-size: 2rem;
-  color: #21ddcd;
-  margin-bottom: 30px;
-  font-weight: 600;
+ font-size: 2rem;
+  color: #23d8ba;
+  margin-bottom: 40px;
+  font-weight: bold;
+
+  letter-spacing: 1px;
 }
 
 .tool-slider {
@@ -82,4 +84,21 @@
     gap: 10px;
     padding: 0 10px;
   }
+}
+
+
+.scroll-hint {
+  text-align: center;
+  color: #777;
+  font-size: 2rem;
+  margin-top: 10px;
+  letter-spacing: 8px;
+  user-select: none;
+  animation: blink 1.2s infinite;
+}
+
+/* Optional blinking animation */
+@keyframes blink {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
 }

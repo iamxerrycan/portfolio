@@ -57,6 +57,8 @@ const ToolSlider = () => {
           </div>
         ))}
       </div>
+        {/* Scroll hint dots */}
+  <div className="scroll-hint">...</div>
     </section>
   );
 };

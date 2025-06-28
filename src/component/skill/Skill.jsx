@@ -8,13 +8,13 @@ const Skill = () => {
   return (
     <section className="skill-section">
        <div className="main-skill-heading" style={{ textAlign: 'center' }}>
-    <h1>My Skills </h1>
+    <h2 className="section-heading">Skill Progress</h2>
   </div>
       <div className="progress-wrapper">
         {/* Left Card: Heading and Paragraph */}
 
         <div className="progress-left-card">
-          <h2 className="section-heading">Skill Progress</h2>
+         
           <p className="progress-intro">
             I specialize in building seamless, high-quality apps with clean design,
             functionality, and user experience. Constantly improving my skills helps

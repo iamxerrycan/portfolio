@@ -1,6 +1,6 @@
 .github-section {
   background-color: #000000;
-  padding: 30px 20px;
+  padding: 50px 20px;
   text-align: center;
   color: white;
 }
@@ -10,6 +10,8 @@
   color: #23d8ba;
   margin-bottom: 40px;
   font-weight: bold;
+
+  letter-spacing: 1px;
 }
 
 .github-widgets {
@@ -20,20 +22,21 @@
 }
 
 .github-card {
-  background-color: #111; /* subtle background for image box */
-  padding: 20px;
-  border-radius: 12px;
+  background-color: #111;
+  padding: 25px;
+  border-radius: 15px;
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+  max-width: 480px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .github-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(0, 255, 200, 0.4);
 }
 
 .github-card img {
@@ -41,20 +44,20 @@
   height: auto;
   object-fit: contain;
   display: block;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-/* Responsive tweaks */
+/* Responsive Tweaks */
 @media (max-width: 768px) {
   .github-card {
-    max-width: 90%;
-    padding: 15px;
+    max-width: 95%;
+    padding: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .github-card {
-    padding: 10px;
+    padding: 15px;
   }
 
   .github-heading {
