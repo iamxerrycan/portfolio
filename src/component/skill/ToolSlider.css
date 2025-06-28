@@ -1,0 +1,85 @@
+.tool-slider-section {
+  padding: 30px 20px;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+.tool-slider-title {
+  font-size: 2rem;
+  color: #21ddcd;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.tool-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.tool-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.tool-card {
+  flex: 0 0 calc(33.333% - 20px);
+  background-color: #4e1a58;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  scroll-snap-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 300px;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6);
+}
+
+.tool-card-img {
+  height: 60px;
+  margin-bottom: 15px;
+  object-fit: contain;
+}
+
+.tool-card-name {
+  color: #0e7b9c;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.tool-card-desc {
+  font-size: 0.95rem;
+  color: #ccc;
+}
+
+/* For screens ≤ 500px: show 1 card */
+@media (max-width: 500px) {
+  .tool-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+/* For screens between 501px and 768px: show 2 cards */
+@media (min-width: 501px) and (max-width: 768px) {
+  .tool-card {
+    flex: 0 0 50%;
+    max-width: 50%;
+    min-width: 50%;
+  }
+
+  .tool-slider {
+    gap: 10px;
+    padding: 0 10px;
+  }
+}
