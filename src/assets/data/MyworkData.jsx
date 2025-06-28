@@ -56,12 +56,17 @@ const MyworkData = [
     name: 'Weather APK',
     contributors: ['Rajshish'],
     technologies: ['react-native', 'expo'],
-    link: 'https://www.linkedin.com/posts/iamxerrycan_reactnative-weatherapp-minimalistdesign-activity-7252937088461885440-wHzC?utm_source=share&utm_medium=member_android&rcm=ACoAAELy3KUBB2gh0eXSgGMUASe_jf79rYjsta4',
+    link: 'https://expo.dev/accounts/iamxerrycan/projects/minimalist-weather/builds/92de3764-7247-4535-b79f-db040179ffa8',
   },{
     name: 'Testing CI/CD',
     contributors: ['Rajshish'],
     technologies: ['Cypress', 'Jest', 'Mocha', 'Chai'],
     link: 'https://github.com/iamxerrycan/CICD-QA',
+  },{
+    name: 'Silent Zone',
+    contributors: ['Rajshish'],
+    technologies: ['react-native', 'expo'],
+    link: 'https://expo.dev/accounts/iamxerrycan/projects/auto-silent-app/builds/d8b21ef6-228e-4614-b2ed-6acaa7d296a2',
   }
 ];
 
