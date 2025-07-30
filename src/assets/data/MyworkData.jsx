@@ -75,7 +75,7 @@ const MyworkData = [
     image: '/dragon.png', 
     description:
       'A React component library published as an NPM package, providing reusable UI components.',
-    category: 'NPM Package',
+    category: 'NPM',
   },
   {
     name: 'Appointment Booking API',
@@ -97,7 +97,7 @@ const MyworkData = [
     image: '/weapk.png', 
     description:
       'A weather application built with React Native and Expo, providing real-time weather updates for various locations.',
-    category: 'Mobile App',
+    category: 'APK',
   },
   {
     name: 'Testing CI/CD',
@@ -105,7 +105,7 @@ const MyworkData = [
     technologies: ['Cypress', 'Jest', 'Mocha', 'Chai'],
     link: 'https://github.com/iamxerrycan/CICD-QA',
     github: 'https://github.com/iamxerrycan/CICD-QA',
-    image: 'https://i.imgur.com/9vCwYwj.png', 
+    image: '/test.png', 
     description:
       'A project demonstrating Continuous Integration and Continuous Deployment (CI/CD) practices using Cypress, Jest, Mocha, and Chai for testing.',
     category: 'Testing',
@@ -119,7 +119,7 @@ const MyworkData = [
     image: '/silent.png', 
     description:
       'A mobile application built with React Native and Expo that automatically silences the phone during specified hours or events.',
-    category: 'Mobile App',
+    category: 'APK',
     status: 'In Progress',
   },
   {
@@ -144,7 +144,7 @@ const MyworkData = [
     image: 'https://i.imgur.com/9vCwYwj.png', 
     description:
       'A social networking platform built with React, Node.js, Express, and MongoDB.',
-    category: 'Full-Stack',
+    category: 'MERN',
     status: 'In Progress',
   }
 ];

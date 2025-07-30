@@ -13,38 +13,43 @@
   animation: fadeIn 0.3s ease;
 }
 
+
+
 .modal-box {
   background-color: #111;
-  padding: 25px;
-  border-radius: 12px;
+  padding: 15px;
+  margin-top: 10px;;
+  border-radius: 8px;
   max-width: 500px;
   width: 90%;
   position: relative;
-  box-shadow: 0 8px 20px rgba(127, 0, 255, 0.3);
+  /* box-shadow: 0 8px 20px rgba(127, 0, 255, 0.3); */
   animation: scaleIn 0.3s ease;
 }
-
 .modal-close {
+  all: unset;
   position: absolute;
-  top: 10px;
+  top: 12px;
   right: 12px;
-  font-size: 1.4rem;
+  font-size: 0.95rem; 
   background: transparent;
   border: none;
-  color: #e100ff;
+  color: #e60032;
   cursor: pointer;
-  transition: transform 0.3s ease;
+  padding: 2px;
+  line-height: 1;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .modal-close:hover {
-  color: #7f00ff;
-  transform: scale(1.2);
+  color: #b10000;
+  transform: scale(1.1);
 }
 
-.modal-box h2 {
-  color: #e100ff;
+.modal-box h6 {
+  color: #51fdfd;
   margin-bottom: 15px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .modal-box p {
@@ -94,10 +99,10 @@
 }
 
 .modal-links a {
-  background-image: linear-gradient(to right, #7f00ff, #e100ff);
+  background-image: linear-gradient(to right, #1eeaf1, #05737a);
   color: white;
   text-decoration: none;
-  padding: 8px 14px;
+  padding: 5px 18px;
   border-radius: 25px;
   font-weight: bold;
   font-size: 0.85rem;
@@ -107,7 +112,7 @@
 
 .modal-links a:hover {
   transform: scale(1.05);
-  box-shadow: 0 6px 18px rgba(225, 0, 255, 0.4);
+  /* box-shadow: 0 6px 18px rgba(225, 0, 255, 0.4); */
 }
 
 @keyframes fadeIn {
@@ -121,3 +126,24 @@
 }
 
 
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.status-badge.green {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.yellow {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.gray {
+  background-color: #e2e3e5;
+  color: #6c757d;
+}

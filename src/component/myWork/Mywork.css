@@ -34,26 +34,34 @@
 .category-buttons::-webkit-scrollbar {
   display: none;
 }
-
 .cat-btn {
+  all: unset;
   padding: 8px 16px;
-  border: none;
-  background-color: #222;
-  color: white;
-  border-radius: 5px;
+  border-radius: 8px;
+  border: 1px solid #14ffcc;
+  background-color: #00fff2;
+  color: black;
   cursor: pointer;
-  transition: 0.3s;
-  white-space: nowrap;
-  scroll-snap-align: start;
-  font-size: 0.9rem;
-  flex: 0 0 auto;
+  transition: all 0.35s ease;
+  font-weight:400;
+  font-size: 14px;
+  display: inline-block;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transform: scale(1);
 }
 
-.cat-btn.active,
 .cat-btn:hover {
-  background-color: #23d8ba;
-  color: black;
+  background: linear-gradient(135deg, #23fff4, #14ffcc);
+  border-color: #008f77;
+  box-shadow: 0 6px 12px rgba(0, 143, 119, 0.3);
+  transform: scale(1.04);
 }
+
+.cat-btn.cat-active {
+  background-color: #23d8cf;
+  border: 1px solid #00b698;
+}
+
 
 .project-grid {
   display: flex;

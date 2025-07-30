@@ -6,10 +6,10 @@ const categories = [
   'All',
   'Frontend',
   'Backend',
-  'Mobile App',
+  'APK',
   'Testing',
-  'Full-Stack',
-  'NPM Package',
+  'MERN',
+  'NPM',
 ];
 
 const Mywork = ({ projects }) => {
@@ -30,7 +30,7 @@ const Mywork = ({ projects }) => {
           {categories.map((cat) => (
             <button
               key={cat}
-              className={`cat-btn ${cat === activeCategory ? 'active' : ''}`}
+              className={`cat-btn ${cat === activeCategory ? 'cat-active' : ''}`}
               onClick={() => setActiveCategory(cat)}
             >
               {cat}
@@ -85,3 +85,5 @@ const Mywork = ({ projects }) => {
 };
 
 export default Mywork;
+
+
