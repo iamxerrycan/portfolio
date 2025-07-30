@@ -1,4 +1,3 @@
-/* Main Section */
 .mywork-section {
   padding: 120px 20px;
   background: #000;
@@ -6,7 +5,6 @@
   text-align: center;
 }
 
-/* Title */
 .mywork-title {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -14,23 +12,27 @@
   font-weight: bold;
 }
 
-/* Category Filter Buttons */
+.category-scroll-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -20px;
+  padding: 0 20px;
+}
+
 .category-buttons {
-  margin-bottom: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  text-align: center;
   gap: 12px;
-  overflow-x: auto;                     /* 👈 Horizontal scroll */
-  -webkit-overflow-scrolling: touch;   /* 👈 Smooth mobile scroll */
   padding: 10px 0;
+  margin-bottom: 30px;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
-  scrollbar-width: none;               /* Firefox */
+  scrollbar-width: none;
 }
 
 .category-buttons::-webkit-scrollbar {
-  display: none;                       /* Hide scrollbar */
+  display: none;
 }
 
 .cat-btn {
@@ -41,7 +43,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: 0.3s;
-  white-space: nowrap;                /* 👈 Prevent text wrap */
+  white-space: nowrap;
   scroll-snap-align: start;
   font-size: 0.9rem;
   flex: 0 0 auto;
@@ -53,7 +55,6 @@
   color: black;
 }
 
-/* Project Card Grid */
 .project-grid {
   display: flex;
   flex-wrap: wrap;
@@ -61,7 +62,6 @@
   justify-content: center;
 }
 
-/* Project Card */
 .project-card {
   background: #111;
   width: 300px;
@@ -75,7 +75,6 @@
   transform: translateY(-6px);
 }
 
-/* Image Section */
 .project-img-wrapper {
   position: relative;
 }
@@ -86,7 +85,6 @@
   object-fit: cover;
 }
 
-/* Status Badge */
 .status-badge {
   position: absolute;
   top: 10px;
@@ -107,7 +105,6 @@
   background-color: #ffcc00;
 }
 
-/* Card Content */
 .project-content {
   padding: 15px;
   text-align: left;
@@ -124,7 +121,6 @@
   margin: 10px 0;
 }
 
-/* Tech Stack Tags */
 .project-tech {
   margin: 10px 0;
 }
@@ -139,7 +135,6 @@
   display: inline-block;
 }
 
-/* Links Section */
 .project-links {
   display: flex;
   justify-content: space-between;
@@ -166,7 +161,6 @@
   background: linear-gradient(to right, #2afdd6, #08fdd8);
 }
 
-/* Responsive tweaks */
 @media (max-width: 600px) {
   .project-card {
     width: 90%;
@@ -183,9 +177,10 @@
     text-align: center;
   }
 
-  .mywork-section{
+  .mywork-section {
     padding: 40px 10px;
   }
+
   .mywork-title {
     font-size: 1.6rem;
   }
