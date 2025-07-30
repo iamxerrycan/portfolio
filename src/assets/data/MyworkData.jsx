@@ -120,7 +120,21 @@ const MyworkData = [
     description:
       'A mobile application built with React Native and Expo that automatically silences the phone during specified hours or events.',
     category: 'Mobile App',
+    status: 'In Progress',
   },
+  {
+  name: 'ADmyBRAND',
+  contributors: ['Rajshish'],
+  technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+  link: 'https://admybrands.netlify.app/',
+  github: 'https://github.com/iamxerrycan/ADmyBRAND',
+  image: '/admy.png', 
+  description:
+    'A sleek and modern landing page built with Next.js and Tailwind CSS, showcasing brand marketing services with smooth animations.',
+  category: 'Frontend',
+  status: 'Completed',
+}
+,
   {
     name: 'Swapmate',
     contributors: ['Rajshish'],
