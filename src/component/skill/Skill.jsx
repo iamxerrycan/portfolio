@@ -7,18 +7,20 @@ import ToolSlider from './ToolSlider';
 const Skill = () => {
   return (
     <section className="skill-section">
-       <div className="main-skill-heading" style={{ textAlign: 'center' }}>
-    <h2 className="section-heading">Skill Progress</h2>
-  </div>
+      <div className="main-skill-heading" style={{ textAlign: 'center' }}>
+        <h2 className="section-heading">Skill Progress</h2>
+      </div>
       <div className="progress-wrapper">
         {/* Left Card: Heading and Paragraph */}
 
         <div className="progress-left-card">
-         
+          <h3 className="progress-subheading">
+            Crafting Seamless Digital Experiences
+          </h3>
           <p className="progress-intro">
-            I specialize in building seamless, high-quality apps with clean design,
-            functionality, and user experience. Constantly improving my skills helps
-            me deliver better results.
+            I build scalable, high-performance web apps with clean design and
+            seamless UX. Focused on clarity, functionality, and impact, I
+            continuously evolve to deliver top-tier results in every project.
           </p>
         </div>
 

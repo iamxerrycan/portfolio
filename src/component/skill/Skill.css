@@ -5,24 +5,12 @@
   text-align: center;
 }
 
-.progress-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  background: linear-gradient(135deg, #000000, #000000);
-  /* padding: 40px; */
-  border-radius: 20px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
-}
-
-.progress-left-card,
-.progress-right-card {
-  flex: 1;
-  min-width: 280px;
-  padding: 20px;
-  background-color: #222222;
-  border-radius: 15px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+.main-skill-heading {
+  font-size: 2rem;
+  color: #23d8ba;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .section-heading {
@@ -32,15 +20,80 @@
   margin-bottom: 20px;
 }
 
-.progress-intro {
-  font-size: 1rem;
-  color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-
-  line-height: 1.6;
+.progress-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  background: linear-gradient(135deg, #000000, #000000);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  padding: 30px;
 }
 
-/* Progress bar styling inside bar */
+/* Common Card Style for Left and Right */
+.progress-left-card,
+.progress-right-card {
+  flex: 1;
+  min-width: 280px;
+  padding: 30px;
+
+  background-color: #1a1a1a;
+  border-radius: 15px;
+  border: 1px solid #2adbd2;
+  box-shadow: 0 8px 25px rgba(0, 255, 200, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.progress-left-card:hover,
+.progress-right-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 255, 200, 0.25);
+}
+/* Main Card Heading */
+.progress-intro-heading {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #00ffe7;
+  margin-bottom: 22px;
+  letter-spacing: 1.2px;
+  text-shadow: 0 0 6px rgba(0, 255, 200, 0.8), 0 0 16px rgba(0, 255, 200, 0.3);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 2px dashed #00ffe7;
+  padding-bottom: 10px;
+}
+
+/* Card Paragraph Text */
+.progress-intro {
+  font-size: 1.15rem;
+  line-height: 2;
+  margin-top: 22px; /* Added spacing from heading */
+  color: #eaffff;
+  background: linear-gradient(
+    145deg,
+    rgba(42, 219, 210, 0.05),
+    rgba(255, 255, 255, 0.03)
+  );
+  padding: 24px 20px;
+  border-radius: 12px;
+  font-family: 'Segoe UI', sans-serif;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  border-left: 4px solid #00ffe7;
+  box-shadow: inset 0 0 22px rgba(0, 255, 234, 0.07);
+  backdrop-filter: blur(4px);
+  transition: all 0.3s ease-in-out;
+}
+
+.progress-intro:hover {
+  transform: scale(1.02);
+  box-shadow: inset 0 0 30px rgba(0, 255, 234, 0.1);
+}
+
+
+/* Progress bar styling */
 .progress-bar {
   margin-bottom: 20px;
 }
@@ -69,17 +122,11 @@
   color: #000;
   font-size: 0.9rem;
 }
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .progress-wrapper {
-    flex-direction: column;
-
-    padding: 30px 20px;
-  }
-
-  .skill-section{
-     padding: 30px 20px;
-     padding-left: 0 !important;
-      padding-right: 0 !important;
+  .skill-section {
+    padding: 30px 15px;
   }
 
   .section-heading {
@@ -87,8 +134,20 @@
     text-align: center;
   }
 
+  .progress-wrapper {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .progress-left-card,
+  .progress-right-card {
+    width: 100%;
+    padding: 20px;
+  }
+
   .progress-intro {
     text-align: center;
+    font-size: 1.05rem;
   }
 
   .progress-fill {
@@ -99,30 +158,4 @@
   .progress-text {
     font-size: 0.85rem;
   }
-
-  .progress-left-card,
-  .progress-right-card {
-    width: 100%;         
-    min-width: 0;       
-    padding: 15px;       /* optional: slightly tighter padding */
-  }
-  .main-skill-heading {
- font-size: 2rem;
-  color: #23d8ba;
-  margin-bottom: 40px;
-  font-weight: bold;
-
-  letter-spacing: 1px;
-  
-}
-}
-
-.main-skill-heading {
- font-size: 2rem;
-  color: #23d8ba;
-  margin-bottom: 40px;
-  font-weight: bold;
-
-  letter-spacing: 1px;
-  
 }

@@ -1,4 +1,3 @@
-// src/SplashScreen.jsx
 import React from 'react';
 import { motion } from 'framer-motion';
 import './firstScreen.css';

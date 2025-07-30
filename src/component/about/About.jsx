@@ -1,7 +1,7 @@
 import React from "react";
 import profession from "../../assets/profession.jpg";
 import student from "../../assets/student.jpg";
-import aboutMeImg from "../../assets/hobby.png"; // replace hobby.png with something relevant
+import aboutMeImg from "../../assets/hobby.png"; 
 import "./About.css";
 
 const About = () => {

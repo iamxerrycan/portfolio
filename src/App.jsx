@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
-    <BrowserRouter> {/* This wraps all of your routing logic */}
+    <BrowserRouter> 
       <Navbar />
       <ToastContainer
         position="top-center"
@@ -20,7 +20,7 @@ function App() {
         draggable
         toastClassName="custom-toast"
       />
-      <AllRoutes /> {/* This can use hooks like useLocation now */}
+      <AllRoutes />
       <Footer className="footer" />
     </BrowserRouter>
   );
