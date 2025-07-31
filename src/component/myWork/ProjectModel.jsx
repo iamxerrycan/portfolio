@@ -2,7 +2,7 @@ import React from "react";
 import "./Modal.css";
 
 const Modal = ({ project, onClose }) => {
-  // Decide status color
+
   const getStatusStyle = (status) => {
     if (status === "Complete") return { color: "green", fontWeight: "bold" };
     if (status === "In Progress") return { color: "orange", fontWeight: "bold" };

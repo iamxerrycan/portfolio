@@ -1,4 +1,4 @@
-/* Global Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -15,7 +15,6 @@ html, body {
   background-color: #f4f4f4;
 }
 
-/* Navbar Container */
 .navbar {
   background-color: #1f1f1f;
   color: #fff;
@@ -50,7 +49,7 @@ html, body {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Navbar Links */
+
 .navbar-links {
   display: flex;
   justify-content: flex-start;
@@ -73,7 +72,7 @@ html, body {
   transform: scale(1.05);
 }
 
-/* Navbar Toggle for Mobile */
+
 .toggle-icon {
   display: none;
   font-size: 28px;
@@ -81,7 +80,7 @@ html, body {
   cursor: pointer;
 }
 
-/* Mobile Styles */
+
 @media screen and (max-width: 768px) {
   .navbar {
     padding: 15px;
@@ -125,7 +124,7 @@ html, body {
   }
 }
 
-/* Mobile Small Screen */
+
 @media screen and (max-width: 480px) {
   #mylogo {
     height: 35px;

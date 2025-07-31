@@ -1,20 +1,19 @@
-/* Reset and Global */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   background-color: #0f0f0f;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #ffffff;
 }
 
-/* Main Container */
 .container-home {
-  margin-top: 80px; 
+  margin-top: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,7 +22,6 @@ html, body {
   text-align: center;
 }
 
-/* Content Wrapper */
 .logo {
   display: flex;
   flex-direction: column;
@@ -33,12 +31,11 @@ html, body {
   max-width: 800px;
 }
 
-/* Profile Image */
 .developer-image {
   width: 280px;
   height: 280px;
   border-radius: 50%;
-  border: 3px solid #00d8ff;;
+  border: 3px solid #00d8ff;
   object-fit: cover;
   box-shadow: 0 0 20px rgba(72, 217, 243, 0.4);
   transition: transform 0.3s ease;
@@ -47,7 +44,6 @@ html, body {
   transform: scale(1.05);
 }
 
-/* Headings */
 .heading-raj {
   font-size: 32px;
   font-weight: 700;
@@ -72,15 +68,14 @@ html, body {
   text-align: center;
 }
 
-/* Resume Button */
 .homebuttonres a {
   padding: 12px 24px;
-  background: linear-gradient(90deg, #7f00ff, #e100ff);
+  background: linear-gradient(to right, #23d8ba, #1da58c);
   color: #fff;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-  font-size: 10px;
+  font-size: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .homebuttonres a:hover {
@@ -95,7 +90,7 @@ html, body {
   margin-top: 20px;
 }
 /* Responsive */
-.heading-raj{
+.heading-raj {
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
@@ -124,7 +119,7 @@ html, body {
 }
 
 @media (max-width: 480px) {
-  .container-home{
+  .container-home {
     margin-top: 10px;
   }
   .developer-image {

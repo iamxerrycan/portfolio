@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { toast } from "react-toastify";
-import linkedinIcon from "../../assets/git.png";     // GitHub icon
-import githubIcon from "../../assets/linkdin.png";   // LinkedIn icon
+import linkedinIcon from "../../assets/git.png";     
+import githubIcon from "../../assets/linkdin.png";   
 import npm from "../../assets/images.png";
 import medium from "../../assets/medium.png";
 import axios from "axios";
@@ -15,7 +15,7 @@ const Contact = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const [loading, setLoading] = useState(false); // loading state
+  const [loading, setLoading] = useState(false);
 
   const validate = () => {
     const errors = {};
@@ -58,7 +58,7 @@ const Contact = () => {
       return;
     }
 
-    setLoading(true); // start loading
+    setLoading(true);
 
     try {
       const res = await axios.post(
@@ -79,7 +79,7 @@ const Contact = () => {
       console.error("❌ API Error:", error.response?.data || error.message);
       toast.error("Error sending message. Please try again later.");
     } finally {
-      setLoading(false); // stop loading
+      setLoading(false);
     }
   };
 
@@ -88,7 +88,9 @@ const Contact = () => {
   }, 2000);
 
   return (
-    <div className="container-contact">
+    <div className="container-contact" id="contact">
+      <h2 className="contact-heading">Get in Touch</h2>
+
       <div className="form-hold">
         <form onSubmit={handleSubmit} className="form">
           <input

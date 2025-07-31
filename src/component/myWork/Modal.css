@@ -13,12 +13,10 @@
   animation: fadeIn 0.3s ease;
 }
 
-
-
 .modal-box {
   background-color: #111;
   padding: 15px;
-  margin-top: 10px;;
+  margin-top: 10px;
   border-radius: 8px;
   max-width: 500px;
   width: 95%;
@@ -32,7 +30,7 @@
   position: absolute;
   top: 12px;
   right: 12px;
-  font-size: 0.95rem; 
+  font-size: 0.95rem;
   background: transparent;
   border: none;
   color: #e60032;
@@ -117,16 +115,22 @@
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes scaleIn {
-  from { transform: scale(0.8); }
-  to { transform: scale(1); }
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
 }
-
-
 
 .status-badge {
   padding: 4px 8px;

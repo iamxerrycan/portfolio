@@ -1,15 +1,15 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   font-family: 'Arial', sans-serif;
 }
 
-/* Base Styles */
+/* Fix for navbar overlap */
 .container-contact {
   background-color: #1c1c1c;
   display: flex;
@@ -18,6 +18,19 @@ html, body {
   flex-wrap: wrap;
   gap: 40px;
   min-height: 100vh;
+  padding-top: 100px;
+  padding-bottom: 30px;
+}
+
+.contact-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #23d8ba;
+
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
 }
 
 .form-hold {
@@ -63,7 +76,7 @@ textarea {
 }
 
 button {
-  background-image: linear-gradient(to right, #7f00ff, #e100ff);
+  background-image: linear-gradient(to right, #23d8ba, #1da58c);
   color: white;
   border: none;
   padding: 12px;
@@ -85,14 +98,6 @@ button:hover {
   margin-top: -8px;
   margin-bottom: 8px;
   font-weight: bold;
-}
-
-.contact-title {
-  color: #000;
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  margin-bottom: 20px;
 }
 
 .social-contact {
@@ -145,11 +150,21 @@ button:hover {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 button.submit-btn.disabled {
   background-color: #999;
   cursor: not-allowed;
+}
+
+@media screen and (max-width: 768px) {
+  .container-contact {
+    padding-top: 0px;
+  }
 }

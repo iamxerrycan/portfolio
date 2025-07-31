@@ -1,14 +1,28 @@
 .about-container {
   margin-top: 90px;
+  padding: 20px 15px;
+  width: 100%;
+  background-color: #000;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+}
+
+.about-main-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  /* background-image: linear-gradient(to right, #23d8ba, #1da58c); */
+  color: #23d8ba;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.about-rows {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  background-color: #000;
-  padding: 20px 15px;
-  width: 100%;
-  box-sizing: border-box;
-  overflow-x: hidden; /* 👈 prevent horizontal scroll */
 }
 
 .about-row {
@@ -19,18 +33,16 @@
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(80, 169, 225, 0.2);
   transition: transform 0.3s ease;
-  margin-bottom: 20px;
   box-sizing: border-box;
 }
 
-.about-box {
-  padding: 20px;
-  text-align: center;
-}
-
-
 .about-row:hover {
   transform: translateY(-6px);
+}
+
+.about-box {
+  padding: 20px 25px;
+  text-align: center;
 }
 
 .about-logo {
@@ -43,29 +55,25 @@
   box-shadow: 0 4px 12px rgba(80, 169, 225, 0.4);
 }
 
-.about-box {
-  padding: 20px 25px;
-  text-align: center;
-}
-
 .about-box h2.header {
   font-size: 1.4rem;
   margin: 20px 0 10px;
-  border-bottom: 2px solid #7f0588;
+  border-bottom: 2px solid #23d8ba;
   display: inline-block;
   padding-bottom: 4px;
+  color: #23d8ba;
 }
 
 .company-info {
   text-align: left;
   margin-top: 15px;
-  border-left: 3px solid #50a9e1;
+  border-left: 3px solid #23d8ba;
   padding-left: 12px;
 }
 
 .company-details h3 {
   font-size: 1rem;
-  color: #50a9e1;
+ color: #23d8ba;
   margin-bottom: 5px;
 }
 
@@ -83,30 +91,18 @@
   line-height: 1.6;
 }
 
-/* Tablet screen fix */
+/* Tablet */
 @media screen and (max-width: 1024px) {
   .about-row {
     max-width: 45%;
   }
 }
 
-/* Mobile responsiveness */
+/* Mobile */
 @media screen and (max-width: 768px) {
-  .about-container {
+  .about-rows {
     flex-direction: column;
     align-items: center;
-    padding: 20px 10px;
-    margin-top: 0;
-  }
-
-  .about-row {
-    width: 90%;     /* 👈 ensure full width on mobile */
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 480px) {
-  .about-container {
-    padding: 30px 10px;
   }
 
   .about-row {
@@ -114,13 +110,15 @@
     width: 90%;
   }
 
-  .about-box {
-    padding: 15px;
-  }
-
   .about-logo {
     width: 80px;
     height: 80px;
+  }
+
+  .about-container {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 40px;
   }
 
   .company-details h3,

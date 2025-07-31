@@ -38,7 +38,7 @@
   }
 }
 
-/* Responsive for mobile (max-width: 480px) */
+
 @media (max-width: 480px) {
   .splash-bg h1 {
     font-size: 2rem;
