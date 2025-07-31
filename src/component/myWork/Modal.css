@@ -171,3 +171,10 @@
   border-radius: 4px;
   font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+  .modal-box {
+    height: 65%;
+  }
+  
+}
