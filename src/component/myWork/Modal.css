@@ -21,9 +21,10 @@
   margin-top: 10px;;
   border-radius: 8px;
   max-width: 500px;
-  width: 90%;
+  width: 95%;
+  height: 80%;
   position: relative;
-  /* box-shadow: 0 8px 20px rgba(127, 0, 255, 0.3); */
+  box-shadow: 0 8px 20px rgba(15, 230, 230, 0.2);
   animation: scaleIn 0.3s ease;
 }
 .modal-close {
@@ -102,7 +103,7 @@
   background-image: linear-gradient(to right, #1eeaf1, #05737a);
   color: white;
   text-decoration: none;
-  padding: 5px 18px;
+  padding: 8px 25px;
   border-radius: 25px;
   font-weight: bold;
   font-size: 0.85rem;
@@ -146,4 +147,23 @@
 .status-badge.gray {
   background-color: #e2e3e5;
   color: #6c757d;
+}
+.modal-box p {
+  font-size: 1rem;
+  color: #f0f0f0;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.modal-box p strong {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.modal-box span {
+  background-color: #000000;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 500;
 }

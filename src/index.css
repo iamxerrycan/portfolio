@@ -1,0 +1,10 @@
+/* Global styles */
+body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  color: #eaeaea;
+  background-color: #111; /* or your theme background */
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}

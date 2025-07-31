@@ -9,6 +9,7 @@ const MyworkData = [
     description:
       'A web application that allows users to sign up, log in, and perform various tasks using API integration.',
     category: 'Frontend',
+    status: 'Complete',
   },
 
   {
@@ -21,6 +22,7 @@ const MyworkData = [
     description:
       'A weather application that provides real-time weather updates for various cities using API integration.',
     category: 'Frontend',
+    status: 'Complete',
   },
   {
     name: 'NGO project',
@@ -31,7 +33,9 @@ const MyworkData = [
     image: '/ngo.png', 
     description:
       'A web application for an NGO that showcases their mission, projects, and ways to get involved.',
-    category: 'Frontend',
+    category: 'Frontend', 
+    status: 'Complete',
+
   },
   {
     name: 'Caclulator',
@@ -43,6 +47,7 @@ const MyworkData = [
     description:
       'A simple calculator application built with React, demonstrating the use of hooks for state management.',
     category: 'Frontend',
+    status: 'Complete',
   },
   {
     name: 'Card-Demo',
@@ -54,6 +59,7 @@ const MyworkData = [
     description:
       'A demo website showcasing a card component using HTML, CSS, and JavaScript.',
     category: 'Frontend',
+    status: 'Complete',
   },
   {
     name: 'Task-Manager',
@@ -65,6 +71,7 @@ const MyworkData = [
     description:
       'A task manager application built with React and Tailwind CSS.',
     category: 'Frontend',
+    status: 'Complete',
   },
   {
     name: 'Dragon Eye - NPM Package',
@@ -76,6 +83,7 @@ const MyworkData = [
     description:
       'A React component library published as an NPM package, providing reusable UI components.',
     category: 'NPM',
+    status: 'Complete',
   },
   {
     name: 'Appointment Booking API',
@@ -87,6 +95,7 @@ const MyworkData = [
     description:
       'A RESTful API for booking appointments, built with Node.js and Express.js, using MongoDB for data storage.',
     category: 'Backend',
+    status: 'Complete',
   },
   {
     name: 'Weather APK',
@@ -98,6 +107,7 @@ const MyworkData = [
     description:
       'A weather application built with React Native and Expo, providing real-time weather updates for various locations.',
     category: 'APK',
+    status: 'Complete',
   },
   {
     name: 'Testing CI/CD',
@@ -109,6 +119,7 @@ const MyworkData = [
     description:
       'A project demonstrating Continuous Integration and Continuous Deployment (CI/CD) practices using Cypress, Jest, Mocha, and Chai for testing.',
     category: 'Testing',
+    status: 'In Progress',
   },
   {
     name: 'Silent Zone',
@@ -132,21 +143,34 @@ const MyworkData = [
   description:
     'A sleek and modern landing page built with Next.js and Tailwind CSS, showcasing brand marketing services with smooth animations.',
   category: 'Frontend',
-  status: 'Completed',
+  status: 'Complete',
 }
 ,
   {
     name: 'Swapmate',
     contributors: ['Rajshish'],
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+    technologies: ['React', 'Node.js', 'Express',"RestAPI", 'MongoDB'],
     link: 'https://swapmate-app.netlify.app/',
     github: 'https://github.com/iamxerrycan/Swapmate',
     image: 'https://i.imgur.com/9vCwYwj.png', 
     description:
-      'A social networking platform built with React, Node.js, Express, and MongoDB.',
+      'A social networking platform where users can swap items by connecting with each other. built with React, Node.js, Express, and MongoDB.',
     category: 'MERN',
     status: 'In Progress',
-  }
+  },
+  {
+  name: 'Janitri Login Automation',
+  contributors: ['Rajshish'],
+  technologies: ['Java', 'Selenium WebDriver', 'TestNG', 'Maven'],
+  link: 'https://github.com/iamxerrycan/QA-Assignment-',
+  github: 'https://github.com/iamxerrycan/QA-Assignment-',
+  image: '/logtest.png', 
+  description:
+    'Automated testing framework for Janitri Dashboard login page using Selenium WebDriver with POM structure and TestNG.',
+  category: 'Testing',
+  status: 'Complete',
+}
+
 ];
 
 export default MyworkData;
