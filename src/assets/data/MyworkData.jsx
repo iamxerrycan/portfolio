@@ -109,6 +109,18 @@ const MyworkData = [
     category: 'APK',
     status: 'Complete',
   },
+    {
+    name: 'Swapmate',
+    contributors: ['Rajshish'],
+    technologies: ['React', 'Node.js', 'Express',"RestAPI", 'MongoDB'],
+    link: 'https://swapmate.netlify.app/',
+    github: 'https://github.com/iamxerrycan/Swapmate',
+    image: '/swap.png', 
+    description:
+      'A social networking platform where users can swap items by connecting with each other. built with React, Node.js, Express, and MongoDB.',
+    category: 'Backend',
+    status: 'In Progress',
+  },
   {
     name: 'Testing CI/CD',
     contributors: ['Rajshish'],
@@ -150,9 +162,9 @@ const MyworkData = [
     name: 'Swapmate',
     contributors: ['Rajshish'],
     technologies: ['React', 'Node.js', 'Express',"RestAPI", 'MongoDB'],
-    link: 'https://swapmate-app.netlify.app/',
+    link: 'https://swapmate.netlify.app/',
     github: 'https://github.com/iamxerrycan/Swapmate',
-    image: 'https://i.imgur.com/9vCwYwj.png', 
+    image: '/swap.png', 
     description:
       'A social networking platform where users can swap items by connecting with each other. built with React, Node.js, Express, and MongoDB.',
     category: 'MERN',
