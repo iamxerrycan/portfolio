@@ -62,7 +62,7 @@ const Contact = () => {
 
     try {
       const res = await axios.post(
-        "https://rest-api-backend-lad4.onrender.com/api/contact",
+        "https://rest-api-backend-lad4.onrender.com/api/portfolio/contact",
         form
       );
 
