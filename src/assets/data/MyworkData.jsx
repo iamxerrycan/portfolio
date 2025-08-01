@@ -54,7 +54,7 @@ const MyworkData = [
     contributors: ['Rajshish'],
     technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
     link: 'https://cartcard.netlify.app/',
-    github: 'https://github.com/iamxerrycan/cart-demo',
+    github: 'https://github.com/iamxerrycan/FrontSupport',
     image: 'cart.png', 
     description:
       'A demo website showcasing a card component using HTML, CSS, and JavaScript.',
