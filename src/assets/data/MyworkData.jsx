@@ -17,7 +17,7 @@ const MyworkData = [
     contributors: ['Rajshish'],
     technologies: ['React', 'Api-Integration'],
     link: 'https://weather-cities-x.netlify.app/',
-    github: 'https://github.com/iamxerrycan/Weather-Web',
+    github: 'https://github.com/iamxerrycan/world-weather',
     image: '/weather.png', 
     description:
       'A weather application that provides real-time weather updates for various cities using API integration.',
@@ -186,7 +186,7 @@ const MyworkData = [
     contributors: ['Rajshish'],
     technologies: ['React', 'Api-Integration'],
     link: 'https://weather-cities-x.netlify.app/',
-    github: 'https://github.com/iamxerrycan/Weather-Web',
+    github : 'https://github.com/iamxerrycan/world-weather',
     image: '/weather.png', 
     description:
       'A weather application that provides real-time weather updates for various cities using API integration.',
