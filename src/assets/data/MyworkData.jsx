@@ -181,7 +181,18 @@ const MyworkData = [
     'Automated testing framework for Janitri Dashboard login page using Selenium WebDriver with POM structure and TestNG.',
   category: 'Testing',
   status: 'Complete',
-}
+},{
+    name: 'Weather-Web',
+    contributors: ['Rajshish'],
+    technologies: ['React', 'Api-Integration'],
+    link: 'https://weather-cities-x.netlify.app/',
+    github: 'https://github.com/iamxerrycan/Weather-Web',
+    image: '/weather.png', 
+    description:
+      'A weather application that provides real-time weather updates for various cities using API integration.',
+    category: 'Testing',
+    status: 'Complete',
+  }
 
 ];
 
