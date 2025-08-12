@@ -1,7 +1,7 @@
 import React from 'react';
 import star from '../../assets/star.jpg';
 import './Home.css';
-import Resume from '../../assets/rajshish2025.pdf';
+import Resume from '../../assets/RajshishSinghResume.pdf';
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
           </p>
 
           <button className="homebuttonres">
-            <a href={Resume} download="rajshish2025.pdf">
+            <a href={Resume} download="RajshishSinghResume.pdf">
               Download Resume
             </a>
           </button>

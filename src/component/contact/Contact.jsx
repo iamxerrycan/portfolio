@@ -1,17 +1,15 @@
-import React, { useState } from "react";
-import "./Contact.css";
-import { toast } from "react-toastify";
-import linkedinIcon from "../../assets/git.png";     
-import githubIcon from "../../assets/linkdin.png";   
-import npm from "../../assets/images.png";
-import medium from "../../assets/medium.png";
-import axios from "axios";
+import React, { useState } from 'react';
+import './Contact.css';
+import { toast } from 'react-toastify';
+import axios from 'axios';
+
+import { FaLinkedin, FaGithub, FaNpm, FaMedium } from 'react-icons/fa';
 
 const Contact = () => {
   const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
+    name: '',
+    email: '',
+    message: '',
   });
 
   const [errors, setErrors] = useState({});
@@ -27,12 +25,12 @@ const Contact = () => {
       errors.name = 'Name can only contain letters and spaces';
     }
     if (!form.email.trim()) {
-      errors.email = "Email is required";
+      errors.email = 'Email is required';
     } else if (!/^\S+@\S+\.\S+$/.test(form.email)) {
-      errors.email = "Invalid email format";
+      errors.email = 'Invalid email format';
     }
     if (!form.message.trim()) {
-      errors.message = "Message is required";
+      errors.message = 'Message is required';
     }
 
     setErrors(errors);
@@ -43,7 +41,7 @@ const Contact = () => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
     if (value.trim()) {
-      setErrors({ ...errors, [name]: "" });
+      setErrors({ ...errors, [name]: '' });
     } else {
       setErrors({ ...errors, [name]: `${name} is required` });
     }
@@ -51,10 +49,10 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log("🚀 Form data to be submitted:", form);
+    console.log('🚀 Form data to be submitted:', form);
 
     if (!validate()) {
-      console.warn("⚠️ Form validation failed");
+      console.warn('⚠️ Form validation failed');
       return;
     }
 
@@ -62,22 +60,22 @@ const Contact = () => {
 
     try {
       const res = await axios.post(
-        "https://rest-api-backend-lad4.onrender.com/api/portfolio/contact",
+        'https://rest-api-backend-lad4.onrender.com/api/portfolio/contact',
         form
       );
 
-      console.log("✅ API response:", res.data);
+      console.log('✅ API response:', res.data);
 
       if (res.status === 200) {
-        toast.success("Message sent successfully! 🚀");
-        setForm({ name: "", email: "", message: "" });
+        toast.success('Message sent successfully! 🚀');
+        setForm({ name: '', email: '', message: '' });
         setErrors({});
       } else {
-        toast.error("Something went wrong, try again!");
+        toast.error('Something went wrong, try again!');
       }
     } catch (error) {
-      console.error("❌ API Error:", error.response?.data || error.message);
-      toast.error("Error sending message. Please try again later.");
+      console.error('❌ API Error:', error.response?.data || error.message);
+      toast.error('Error sending message. Please try again later.');
     } finally {
       setLoading(false);
     }
@@ -119,13 +117,17 @@ const Contact = () => {
           />
           {errors.message && <span className="error">{errors.message}</span>}
 
-          <button type="submit" disabled={loading} className={`submit-btn ${loading ? "disabled" : ""}`}>
+          <button
+            type="submit"
+            disabled={loading}
+            className={`submit-btn ${loading ? 'disabled' : ''}`}
+          >
             {loading ? (
               <>
                 <span className="spinner" /> Sending...
               </>
             ) : (
-              "Send"
+              'Send'
             )}
           </button>
         </form>
@@ -133,19 +135,40 @@ const Contact = () => {
 
       <div className="social-contact">
         <div className="links">
-          <a href="https://www.linkedin.com/in/iamxerrycan" target="_blank" rel="noopener noreferrer">
-            <img src={githubIcon} alt="LinkedIn" className="social-icon" />
+          <a
+            href="https://www.linkedin.com/in/iamxerrycan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedin size={28} color="#0077b5" />
           </a>
-          <a href="https://github.com/iamxerrycan" target="_blank" rel="noopener noreferrer">
-            <img src={linkedinIcon} alt="GitHub" className="social-icon" />
+          <a
+            href="https://github.com/iamxerrycan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <FaGithub size={28} />
           </a>
-          <a href="https://www.npmjs.com/~iamxerrycan" target="_blank" rel="noopener noreferrer">
-            <img src={npm} alt="NPM" className="social-icon" />
+          <a
+            href="https://www.npmjs.com/~iamxerrycan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="NPM"
+          >
+            <FaNpm size={28} color="#CB3837" />
           </a>
-          <a href="https://medium.com/@iamxerrycan" target="_blank" rel="noopener noreferrer">
-            <img src={medium} alt="Medium" className="social-icon" />
+          <a
+            href="https://medium.com/@iamxerrycan"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Medium"
+          >
+            <FaMedium size={28} />
           </a>
         </div>
+
         <div className="contact-info">
           <p>Email: rajshish333@gmail.com</p>
           <p>Kolkata, Saltlake, Laketown - 700048</p>
