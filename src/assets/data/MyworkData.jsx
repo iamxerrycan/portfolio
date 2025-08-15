@@ -1,16 +1,4 @@
 const MyworkData = [
-  {
-    name: 'SignUp-LogIn',
-    contributors: ['Rajshish'],
-    technologies: ['React', 'Redux', 'Api-Integration'],
-    link: 'https://sign-up-in-auth.netlify.app',
-    github: 'https://github.com/iamxerrycan/SignUp-LoginIn',
-    image: '/form.png' ,
-    description:
-      'A web application that allows users to sign up, log in, and perform various tasks using API integration.',
-    category: 'Frontend',
-    status: 'Complete',
-  },
 
   {
     name: 'Weather-Web',
@@ -46,18 +34,6 @@ const MyworkData = [
     image: '/cal.png', 
     description:
       'A simple calculator application built with React, demonstrating the use of hooks for state management.',
-    category: 'Frontend',
-    status: 'Complete',
-  },
-  {
-    name: 'Card-Demo',
-    contributors: ['Rajshish'],
-    technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
-    link: 'https://cartcard.netlify.app/',
-    github: 'https://github.com/iamxerrycan/FrontSupport',
-    image: 'cart.png', 
-    description:
-      'A demo website showcasing a card component using HTML, CSS, and JavaScript.',
     category: 'Frontend',
     status: 'Complete',
   },
