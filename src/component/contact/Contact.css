@@ -11,7 +11,7 @@ body {
 
 /* Fix for navbar overlap */
 .container-contact {
-  background-color: #1c1c1c;
+   background-color: #000000;
   display: flex;
   justify-content: center;
   align-items: center;

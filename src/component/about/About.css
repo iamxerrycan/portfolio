@@ -2,7 +2,7 @@
   margin-top: 90px;
   padding: 20px 15px;
   width: 100%;
-  background-color: #000;
+  background-color: #000000;
   box-sizing: border-box;
   overflow-x: hidden;
   padding-bottom: 40px;
@@ -73,7 +73,7 @@
 
 .company-details h3 {
   font-size: 1rem;
- color: #23d8ba;
+  color: #23d8ba;
   margin-bottom: 5px;
 }
 

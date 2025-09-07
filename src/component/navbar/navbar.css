@@ -9,7 +9,8 @@ a {
   color: inherit;
 }
 
-html, body {
+html,
+body {
   font-family: 'Arial', sans-serif;
   overflow-x: hidden;
   background-color: #f4f4f4;
@@ -17,7 +18,7 @@ html, body {
 
 /* Navbar container */
 .navbar {
-  background-color: #1f1f1f;
+  background-color: #0a0a0a;
   color: #fff;
   display: flex;
   justify-content: space-between;
@@ -91,7 +92,8 @@ html, body {
     transform: translate(-50%, -50%) rotate(0deg) translateX(20px) rotate(0deg);
   }
   100% {
-    transform: translate(-50%, -50%) rotate(360deg) translateX(20px) rotate(-360deg);
+    transform: translate(-50%, -50%) rotate(360deg) translateX(20px)
+      rotate(-360deg);
   }
 }
 
