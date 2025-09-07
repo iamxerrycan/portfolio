@@ -13,7 +13,7 @@ body {
 }
 
 .container-home {
-  margin-top: 80px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,7 +120,7 @@ body {
 
 @media (max-width: 480px) {
   .container-home {
-    margin-top: 10px;
+    margin-top: 80px;
   }
 
   .developer-image {
@@ -130,6 +130,8 @@ body {
 
   .heading-raj {
     font-size: 22px;
+    color: #220d1e;
+    
   }
 
   .sub-heading {

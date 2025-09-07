@@ -9,7 +9,7 @@ const Home = () => {
       <div className="logo">
         <img src={star} alt="Rajshish Singh" className="developer-image" />
         <div className="text-container">
-          <h1 className="heading-raj">Rajshish Singh</h1>
+          <p className="heading-raj">Rajshish Singh</p>
           <h2 className="sub-heading">
             Full Stack Developer | MERN | QA Automation Enthusiast
           </h2>

@@ -9,7 +9,7 @@
 }
 
 .about-main-heading {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   text-align: center;
   /* background-image: linear-gradient(to right, #23d8ba, #1da58c); */
@@ -119,6 +119,7 @@
     margin: 0;
     padding: 0;
     padding-bottom: 40px;
+    margin-top: 100px;
   }
 
   .company-details h3,
