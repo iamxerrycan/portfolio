@@ -24,27 +24,38 @@ const Navbar = () => {
       <div className="navbar-header">
         <img id="mylogo" src={logo} alt="Logo" />
       </div>
+
       <div className={`navbar-links ${showNavbar ? 'active' : ''}`}>
-        <Link to="/" onClick={handleLinkClick}>
+        <Link to="/" onClick={handleLinkClick} className="icon-wrapper">
           <AiOutlineHome className="nav-icon" />
-          {/* <span className="nav-link">Home</span> */}
+          <span className="orbit"></span>
         </Link>
-        <Link to="/About" onClick={handleLinkClick}>
+
+        <Link to="/About" onClick={handleLinkClick} className="icon-wrapper">
           <FaUser className="nav-icon" />
-          {/* <span className="nav-link">About</span> */}
+          <span className="orbit"></span>
         </Link>
-        <Link to="/Skill" onClick={handleLinkClick}>
+
+        <Link to="/Skill" onClick={handleLinkClick} className="icon-wrapper">
           <GiSkills className="nav-icon" />
-          {/* <span className="nav-link">Skill</span> */}
+          <span className="orbit"></span>
         </Link>
-        <Link to="/MyworkPage" onClick={handleLinkClick}>
+
+        <Link
+          to="/MyworkPage"
+          onClick={handleLinkClick}
+          className="icon-wrapper"
+        >
           <MdWork className="nav-icon" />
-          {/* <span className="nav-link">Work</span> */}
+          <span className="orbit"></span>
         </Link>
-        <Link to="/Contact" onClick={handleLinkClick}>
+
+        <Link to="/Contact" onClick={handleLinkClick} className="icon-wrapper">
           <MdContactMail className="nav-icon" />
+          <span className="orbit"></span>
         </Link>
       </div>
+
       <div className="toggle-icon" onClick={toggleNavbar}>
         <FaBars />
       </div>
