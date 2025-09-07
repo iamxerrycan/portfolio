@@ -26,12 +26,13 @@ const Skill = () => {
 
         {/* Right Card: Skill Bars */}
         <div className="progress-right-card">
-          <ProgressBar label="HTML/CSS" value={80} />
-          <ProgressBar label="UI/UX Design" value={90} />
-          <ProgressBar label="JavaScript" value={75} />
-          <ProgressBar label="MERN" value={95} />
-          <ProgressBar label="Software Testing" value={70} />
-          <ProgressBar label="SEO Best Practices" value={80} />
+          <ProgressBar label="HTML/CSS/JavaScript" value={99} />
+          <ProgressBar label="UI/UX Design" value={99} />
+          <ProgressBar label="Software Development" value={99} />
+          <ProgressBar label="MERN Stack" value={99} />
+          <ProgressBar label="Software Testing" value={99} />
+          <ProgressBar label="Adaptability - Flexibility - Problem-Solving - Fast Learner" value={99} />
+
         </div>
       </div>
 
