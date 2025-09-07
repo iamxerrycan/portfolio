@@ -5,9 +5,21 @@ const MyworkData = [
     technologies: ['React', 'Redux', 'Api-Integration'],
     link: 'https://sign-up-in-auth.netlify.app',
     github: 'https://github.com/iamxerrycan/SignUp-LoginIn',
-    image: '/form.png' ,
+    image: '/form.png',
     description:
       'A web application that allows users to sign up, log in, and perform various tasks using API integration.',
+    category: 'Frontend',
+    status: 'Complete',
+  },
+  {
+    name: 'NamoStay',
+    contributors: ['Rajshish Singh'],
+    technologies: ['React', 'CSS', 'HTML', 'JavaScript'],
+    link: 'https://namostay.netlify.app/',
+    github: 'https://github.com/iamxerrycan/NamoStay',
+    image: '/namostay.png',
+    description:
+      'A frontend room booking app where users can browse and book rooms easily.',
     category: 'Frontend',
     status: 'Complete',
   },
@@ -18,7 +30,7 @@ const MyworkData = [
     technologies: ['React', 'Api-Integration'],
     link: 'https://weather-cities-x.netlify.app/',
     github: 'https://github.com/iamxerrycan/Weather-Web',
-    image: '/weather.png', 
+    image: '/weather.png',
     description:
       'A weather application that provides real-time weather updates for various cities using API integration.',
     category: 'Frontend',
@@ -30,12 +42,11 @@ const MyworkData = [
     technologies: ['Reactjs', 'javascript', 'HTML', 'CSS'],
     link: 'https://jeevan-dhara-org.netlify.app/',
     github: 'https://github.com/iamxerrycan/NGO-project',
-    image: '/ngo.png', 
+    image: '/ngo.png',
     description:
       'A web application for an NGO that showcases their mission, projects, and ways to get involved.',
-    category: 'Frontend', 
+    category: 'Frontend',
     status: 'Complete',
-
   },
   {
     name: 'Caclulator',
@@ -43,7 +54,7 @@ const MyworkData = [
     technologies: ['Reactjs', 'hooks'],
     link: 'https://calculator-react-webapp.netlify.app/',
     github: 'https://github.com/iamxerrycan/Calculator',
-    image: '/cal.png', 
+    image: '/cal.png',
     description:
       'A simple calculator application built with React, demonstrating the use of hooks for state management.',
     category: 'Frontend',
@@ -55,7 +66,7 @@ const MyworkData = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery'],
     link: 'https://cartcard.netlify.app/',
     github: 'https://github.com/iamxerrycan/FrontSupport',
-    image: 'cart.png', 
+    image: 'cart.png',
     description:
       'A demo website showcasing a card component using HTML, CSS, and JavaScript.',
     category: 'Frontend',
@@ -67,7 +78,7 @@ const MyworkData = [
     technologies: ['HTML', 'CSS', 'JavaScript', 'React', 'Tailwind'],
     link: 'https://tasklistmanagerr.netlify.app/',
     github: 'https://github.com/iamxerrycan/Task-Manager',
-    image: '/tasklist.png', 
+    image: '/tasklist.png',
     description:
       'A task manager application built with React and Tailwind CSS.',
     category: 'Frontend',
@@ -79,7 +90,7 @@ const MyworkData = [
     technologies: ['React', 'NPM'],
     link: 'https://www.npmjs.com/package/dragon-eye',
     github: 'https://github.com/iamxerrycan/NPMpackage',
-    image: '/dragon.png', 
+    image: '/dragon.png',
     description:
       'A React component library published as an NPM package, providing reusable UI components.',
     category: 'NPM',
@@ -91,7 +102,7 @@ const MyworkData = [
     technologies: ['Node.js', 'Express.js', 'MongoDB', 'Multer'],
     link: 'https://github.com/iamxerrycan/restAPI-database',
     github: 'https://github.com/iamxerrycan/restAPI-database',
-    image: '/postman.png', 
+    image: '/postman.png',
     description:
       'A RESTful API for booking appointments, built with Node.js and Express.js, using MongoDB for data storage.',
     category: 'Backend',
@@ -103,19 +114,19 @@ const MyworkData = [
     technologies: ['react-native', 'expo'],
     link: 'https://expo.dev/accounts/iamxerrycan/projects/minimalist-weather/builds/92de3764-7247-4535-b79f-db040179ffa8',
     github: 'https://github.com/iamxerrycan/Weather-App',
-    image: '/weapk.png', 
+    image: '/weapk.png',
     description:
       'A weather application built with React Native and Expo, providing real-time weather updates for various locations.',
     category: 'APK',
     status: 'Complete',
   },
-    {
+  {
     name: 'Swapmate',
     contributors: ['Rajshish'],
-    technologies: ['React', 'Node.js', 'Express',"RestAPI", 'MongoDB'],
+    technologies: ['React', 'Node.js', 'Express', 'RestAPI', 'MongoDB'],
     link: 'https://swapmate.netlify.app/',
     github: 'https://github.com/iamxerrycan/Swapmate',
-    image: '/swap.png', 
+    image: '/swap.png',
     description:
       'A social networking platform where users can swap items by connecting with each other. built with React, Node.js, Express, and MongoDB.',
     category: 'Backend',
@@ -127,7 +138,7 @@ const MyworkData = [
     technologies: ['Cypress', 'Jest', 'Mocha', 'Chai'],
     link: 'https://github.com/iamxerrycan/CICD-QA',
     github: 'https://github.com/iamxerrycan/CICD-QA',
-    image: '/test.png', 
+    image: '/test.png',
     description:
       'A project demonstrating Continuous Integration and Continuous Deployment (CI/CD) practices using Cypress, Jest, Mocha, and Chai for testing.',
     category: 'Testing',
@@ -139,50 +150,48 @@ const MyworkData = [
     technologies: ['react-native', 'expo'],
     link: 'https://expo.dev/accounts/iamxerrycan/projects/auto-silent-app/builds/d8b21ef6-228e-4614-b2ed-6acaa7d296a2',
     github: 'https://github.com/iamxerrycan/Silent-Zone',
-    image: '/silent.png', 
+    image: '/silent.png',
     description:
       'A mobile application built with React Native and Expo that automatically silences the phone during specified hours or events.',
     category: 'APK',
     status: 'In Progress',
   },
   {
-  name: 'ADmyBRAND',
-  contributors: ['Rajshish'],
-  technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
-  link: 'https://admybrands.netlify.app/',
-  github: 'https://github.com/iamxerrycan/ADmyBRAND',
-  image: '/admy.png', 
-  description:
-    'A sleek and modern landing page built with Next.js and Tailwind CSS, showcasing brand marketing services with smooth animations.',
-  category: 'Frontend',
-  status: 'Complete',
-}
-,
+    name: 'ADmyBRAND',
+    contributors: ['Rajshish'],
+    technologies: ['Next.js', 'Tailwind CSS', 'Framer Motion'],
+    link: 'https://admybrands.netlify.app/',
+    github: 'https://github.com/iamxerrycan/ADmyBRAND',
+    image: '/admy.png',
+    description:
+      'A sleek and modern landing page built with Next.js and Tailwind CSS, showcasing brand marketing services with smooth animations.',
+    category: 'Frontend',
+    status: 'Complete',
+  },
   {
     name: 'Swapmate',
     contributors: ['Rajshish'],
-    technologies: ['React', 'Node.js', 'Express',"RestAPI", 'MongoDB'],
+    technologies: ['React', 'Node.js', 'Express', 'RestAPI', 'MongoDB'],
     link: 'https://swapmate.netlify.app/',
     github: 'https://github.com/iamxerrycan/Swapmate',
-    image: '/swap.png', 
+    image: '/swap.png',
     description:
       'A social networking platform where users can swap items by connecting with each other. built with React, Node.js, Express, and MongoDB.',
     category: 'MERN',
     status: 'In Progress',
   },
   {
-  name: 'Janitri Login Automation',
-  contributors: ['Rajshish'],
-  technologies: ['Java', 'Selenium WebDriver', 'TestNG', 'Maven'],
-  link: 'https://github.com/iamxerrycan/QA-Assignment-',
-  github: 'https://github.com/iamxerrycan/QA-Assignment-',
-  image: '/logtest.png', 
-  description:
-    'Automated testing framework for Janitri Dashboard login page using Selenium WebDriver with POM structure and TestNG.',
-  category: 'Testing',
-  status: 'Complete',
-}
-
+    name: 'Janitri Login Automation',
+    contributors: ['Rajshish'],
+    technologies: ['Java', 'Selenium WebDriver', 'TestNG', 'Maven'],
+    link: 'https://github.com/iamxerrycan/QA-Assignment-',
+    github: 'https://github.com/iamxerrycan/QA-Assignment-',
+    image: '/logtest.png',
+    description:
+      'Automated testing framework for Janitri Dashboard login page using Selenium WebDriver with POM structure and TestNG.',
+    category: 'Testing',
+    status: 'Complete',
+  },
 ];
 
 export default MyworkData;

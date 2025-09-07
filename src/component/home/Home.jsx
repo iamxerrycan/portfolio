@@ -7,19 +7,21 @@ const Home = () => {
   return (
     <div className="container-home">
       <div className="logo">
-        <img src={star} alt="Developer" className="developer-image" />
+        <img src={star} alt="Rajshish Singh" className="developer-image" />
         <div className="text-container">
           <h1 className="heading-raj">Rajshish Singh</h1>
           <h2 className="sub-heading">
             Full Stack Developer | MERN | QA Automation Enthusiast
           </h2>
           <p className="mydata">
-            I build fast, scalable web apps using the MERN stack. I love solving
-            real-world problems with clean code and efficient design.
+            Crafting seamless web experiences with clean, efficient, and
+            scalable code. From React interfaces to Node.js APIs, I turn ideas
+            into functional realities.
           </p>
           <p className="mydata">
-            From crafting responsive React UIs to building robust Node.js APIs,
-            I bring ideas to life—tested, reliable, and ready to scale.
+            Passionate about problem-solving, automation, and delivering
+            high-quality solutions that are robust, responsive, and ready to
+            scale.
           </p>
 
           <button className="homebuttonres">

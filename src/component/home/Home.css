@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 30px;
   width: 100%;
   max-width: 800px;
 }
@@ -37,62 +37,62 @@ body {
   border-radius: 50%;
   border: 3px solid #00d8ff;
   object-fit: cover;
-  box-shadow: 0 0 20px rgba(72, 217, 243, 0.4);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 25px rgba(72, 217, 243, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .developer-image:hover {
-  transform: scale(1.05);
+  transform: scale(1.06);
+  box-shadow: 0 0 35px rgba(72, 217, 243, 0.8);
 }
 
 .heading-raj {
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 34px;
+  font-weight: 800;
   background: linear-gradient(90deg, #ff00cc, #3333ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 15px;
 }
 
 .sub-heading {
   font-size: 20px;
   color: #cfcfcf;
   font-style: italic;
-  margin-top: -10px;
+  margin-bottom: 15px;
 }
 
-/* Paragraph */
 .mydata {
   font-size: 17px;
   color: #dddddd;
-  line-height: 1.6;
-  margin: 10px 30px;
+  line-height: 1.7;
+  margin: 12px 30px;
   text-align: center;
 }
 
 .homebuttonres a {
-  padding: 12px 24px;
+  padding: 12px 28px;
   background: linear-gradient(to right, #23d8ba, #1da58c);
   color: #fff;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
+  border-radius: 10px;
+  font-weight: 600;
   font-size: 20px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .homebuttonres a:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 12px rgba(225, 0, 255, 0.6);
+  box-shadow: 0 0 15px rgba(35, 216, 186, 0.6);
 }
 
 .text-container {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-  margin-top: 20px;
 }
+
 /* Responsive */
-.heading-raj {
-  margin-bottom: 20px;
-}
 @media (max-width: 768px) {
   .developer-image {
     width: 220px;
@@ -100,7 +100,7 @@ body {
   }
 
   .heading-raj {
-    font-size: 26px;
+    font-size: 28px;
   }
 
   .sub-heading {
@@ -113,7 +113,7 @@ body {
   }
 
   .homebuttonres a {
-    font-size: 15px;
+    font-size: 16px;
     padding: 10px 20px;
   }
 }
@@ -122,9 +122,10 @@ body {
   .container-home {
     margin-top: 10px;
   }
+
   .developer-image {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
   }
 
   .heading-raj {
@@ -144,4 +145,18 @@ body {
     font-size: 14px;
     padding: 8px 16px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;
+}
+
+html, body {
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+body::-webkit-scrollbar {
+  display: none; 
 }
