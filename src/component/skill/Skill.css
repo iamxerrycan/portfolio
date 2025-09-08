@@ -5,19 +5,49 @@
   text-align: center;
 }
 
-.main-skill-heading {
-  font-size: 2rem;
-  color: #23d8ba;
-  margin-bottom: 40px;
+/* ================= Skill Progress Heading ================= */
+.section-heading {
   font-weight: bold;
-  letter-spacing: 1px;
+  color: #23d8ba;
+  position: relative;
+  text-align: center;
+  animation: fadeDown 1.5s ease;
+  margin-bottom: 20px;
 }
 
-.section-heading {
-  font-size: 2rem;
-  color: #2adbd2;
-  font-weight: bold;
-  margin-bottom: 20px;
+.section-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #23d8ba, #1da58c);
+  border-radius: 3px;
+  animation: expand 2s infinite alternate;
+  box-shadow: 0 0 12px #23d8ba;
+}
+
+/* Animations */
+@keyframes expand {
+  0% {
+    width: 40px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .progress-wrapper {
@@ -126,6 +156,7 @@
 @media (max-width: 768px) {
   .skill-section {
     padding: 30px 15px;
+    margin-top: 80px;
   }
 
   .section-heading {
