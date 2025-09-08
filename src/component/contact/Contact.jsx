@@ -6,12 +6,7 @@ import axios from 'axios';
 import { FaLinkedin, FaGithub, FaNpm, FaMedium } from 'react-icons/fa';
 
 const Contact = () => {
-  const [form, setForm] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
-
+  const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
@@ -22,7 +17,7 @@ const Contact = () => {
     } else if (form.name.length < 3) {
       errors.name = 'Name must be at least 3 characters long';
     } else if (!/^[a-zA-Z\s]+$/.test(form.name)) {
-      errors.name = 'Name can only contain letters and spaces';
+      errors.name = 'Only letters and spaces allowed';
     }
     if (!form.email.trim()) {
       errors.email = 'Email is required';
@@ -49,52 +44,38 @@ const Contact = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('🚀 Form data to be submitted:', form);
-
-    if (!validate()) {
-      console.warn('⚠️ Form validation failed');
-      return;
-    }
+    if (!validate()) return;
 
     setLoading(true);
-
     try {
       const res = await axios.post(
         'https://rest-api-backend-lad4.onrender.com/api/portfolio/contact',
         form
       );
 
-      console.log('✅ API response:', res.data);
-
       if (res.status === 200) {
         toast.success('Message sent successfully! 🚀');
         setForm({ name: '', email: '', message: '' });
-        setErrors({});
       } else {
         toast.error('Something went wrong, try again!');
       }
     } catch (error) {
-      console.error('❌ API Error:', error.response?.data || error.message);
       toast.error('Error sending message. Please try again later.');
     } finally {
       setLoading(false);
     }
   };
 
-  setTimeout(() => {
-    setErrors({});
-  }, 2000);
-
   return (
     <div className="container-contact" id="contact">
       <h2 className="contact-heading">Get in Touch</h2>
 
-      <div className="form-hold">
+      <div className="form-hold fade-in">
         <form onSubmit={handleSubmit} className="form">
           <input
             type="text"
             name="name"
-            placeholder="Name"
+            placeholder="Your Name"
             value={form.name}
             onChange={handleChange}
           />
@@ -103,7 +84,7 @@ const Contact = () => {
           <input
             type="email"
             name="email"
-            placeholder="Email"
+            placeholder="Your Email"
             value={form.email}
             onChange={handleChange}
           />
@@ -111,7 +92,7 @@ const Contact = () => {
 
           <textarea
             name="message"
-            placeholder="Message"
+            placeholder="Your Message"
             value={form.message}
             onChange={handleChange}
           />
@@ -122,50 +103,40 @@ const Contact = () => {
             disabled={loading}
             className={`submit-btn ${loading ? 'disabled' : ''}`}
           >
-            {loading ? (
-              <>
-                <span className="spinner" /> Sending...
-              </>
-            ) : (
-              'Send'
-            )}
+            {loading ? <span className="spinner" /> : 'Send Message'}
           </button>
         </form>
       </div>
 
-      <div className="social-contact">
+      <div className="social-contact fade-in">
         <div className="links">
           <a
             href="https://www.linkedin.com/in/iamxerrycan"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="LinkedIn"
           >
-            <FaLinkedin size={28} color="#0077b5" />
+            <FaLinkedin className="social-icon" />
           </a>
           <a
             href="https://github.com/iamxerrycan"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="GitHub"
           >
-            <FaGithub size={28} />
+            <FaGithub className="social-icon" />
           </a>
           <a
             href="https://www.npmjs.com/~iamxerrycan"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="NPM"
           >
-            <FaNpm size={28} color="#CB3837" />
+            <FaNpm className="social-icon" />
           </a>
           <a
             href="https://medium.com/@iamxerrycan"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Medium"
           >
-            <FaMedium size={28} />
+            <FaMedium className="social-icon" />
           </a>
         </div>
 

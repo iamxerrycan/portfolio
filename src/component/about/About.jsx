@@ -24,7 +24,7 @@ const About = () => {
             </div>
             <div className="company-info">
               <div className="company-details">
-                <h3>Focus Research Lab Pvt. Ltd. <span className="date-location">| March 2023 – Apr 2024 • Chennai, India</span></h3>
+                <h3>Focus Research Lab Pvt. Ltd. <span className="date-location">| March 2023 – Present • Chennai, India</span></h3>
                 <p>
                   Currently working as a <strong>React Developer</strong>. Developed frontend features using React.js, integrated Node.js APIs, and contributed to QA automation with Cypress and Postman for API testing.
                 </p>

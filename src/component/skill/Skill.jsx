@@ -31,8 +31,10 @@ const Skill = () => {
           <ProgressBar label="Software Development" value={99} />
           <ProgressBar label="MERN Stack" value={99} />
           <ProgressBar label="Software Testing" value={99} />
-          <ProgressBar label="Adaptability - Flexibility - Problem-Solving - Fast Learner" value={99} />
-
+          <ProgressBar
+            label="Adaptability - Problem-Solving - Fast Learner"
+            value={99}
+          />
         </div>
       </div>
 
