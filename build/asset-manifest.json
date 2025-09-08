@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.c7689882.css",
+    "main.css": "/static/css/main.326a1258.css",
     "main.js": "/static/js/main.227faf2f.js",
     "static/media/star.jpg": "/static/media/star.a7b92387af478989dd3e.jpg",
     "static/media/RajshishSinghResume.pdf": "/static/media/RajshishSinghResume.34f0a18a2ab4a5db6c0b.pdf",
     "static/media/profession.jpg": "/static/media/profession.9c6dc00909dc4b724716.jpg",
     "static/media/student.jpg": "/static/media/student.e70705e0d8041d546464.jpg",
     "index.html": "/index.html",
-    "main.c7689882.css.map": "/static/css/main.c7689882.css.map",
+    "main.326a1258.css.map": "/static/css/main.326a1258.css.map",
     "main.227faf2f.js.map": "/static/js/main.227faf2f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c7689882.css",
+    "static/css/main.326a1258.css",
     "static/js/main.227faf2f.js"
   ]
 }

@@ -1,3 +1,4 @@
+/* -------------------- Section -------------------- */
 .mywork-section {
   padding: 80px 20px;
   background: #000;
@@ -6,16 +7,31 @@
   margin-top: 25px;
 }
 
+/* -------------------- Title -------------------- */
 .mywork-title {
-  margin-bottom: 30px;
   color: #23d8ba;
-  margin-top: 25px;
+  margin-bottom: 25px;
   position: relative;
   animation: fadeDown 1.2s ease;
 }
 
+.mywork-title::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(90deg, #23d8ba, #1da58c);
+  border-radius: 3px;
+  animation: expand 2s infinite alternate;
+}
+
+/* -------------------- Category Scroll -------------------- */
 .category-scroll-wrapper {
   overflow-x: auto;
+  padding-bottom: 12px;
 }
 
 .category-buttons {
@@ -27,7 +43,6 @@
 }
 
 .cat-btn {
-  padding: 10px 18px;
   border-radius: 25px;
   border: 2px solid #23d8ba;
   background: transparent;
@@ -35,6 +50,7 @@
   cursor: pointer;
   font-size: 14px;
   transition: all 0.3s ease;
+  padding: 10px 18px;
 }
 
 .cat-btn:hover {
@@ -43,13 +59,7 @@
   transform: scale(1.08);
 }
 
-.cat-active {
-  background: linear-gradient(90deg, #23d8ba, #1da58c);
-  color: #000;
-  font-weight: bold;
-}
-
-/* Project Grid */
+/* -------------------- Project Grid -------------------- */
 .project-grid {
   display: grid;
   gap: 25px;
@@ -63,7 +73,6 @@
   border-radius: 18px;
   overflow: hidden;
   box-shadow: 0 0 20px rgba(35, 216, 186, 0.3);
-  transform: translateY(0);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   animation: fadeIn 0.8s ease both;
   min-height: 380px;
@@ -143,7 +152,7 @@
   transform: scale(1.08);
 }
 
-/* Animations */
+/* -------------------- Animations -------------------- */
 @keyframes fadeDown {
   from {
     opacity: 0;
@@ -166,20 +175,6 @@
   }
 }
 
-
-.mywork-title::after {
-  content: '';
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #23d8ba, #1da58c);
-  border-radius: 3px;
-  animation: expand 2s infinite alternate;
-}
-
 @keyframes expand {
   0% {
     width: 40px;
@@ -189,13 +184,16 @@
   }
 }
 
-@keyframes fadeDown {
-  from {
-    opacity: 0;
-    transform: translateY(-30px);
+/* -------------------- Responsive -------------------- */
+@media screen and (max-width: 768px) {
+  .mywork-title {
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    margin-bottom: 25px;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .project-card {
+    min-height: 320px;
   }
 }

@@ -15,7 +15,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 50px;
   min-height: 100vh;
   padding: 120px 20px 40px;
   text-align: center;
@@ -244,10 +244,6 @@ button:hover {
     padding: 12px;
   }
 
-  .error {
-    font-size: 11px;
-  }
-
   .social-icon {
     font-size: 28px;
   }
@@ -262,7 +258,7 @@ button:hover {
   .container-contact {
     margin-top: 25px;
     padding: 80px 15px 30px;
-    gap: 25px;
+    gap: 50px;
   }
 
   .form-hold {
@@ -286,12 +282,6 @@ button:hover {
     padding: 10px;
   }
 
-  .error {
-    font-size: 10px;
-    margin-top: -5px;
-    margin-bottom: 5px;
-  }
-
   .social-icon {
     font-size: 26px;
   }
@@ -301,7 +291,6 @@ button:hover {
   }
 }
 
-/* Errors */
 .error {
   color: #ff4c4c;
   font-size: 13px;
@@ -312,10 +301,8 @@ button:hover {
   text-align: center;
 }
 
-/* Responsive Errors */
 @media (max-width: 480px) {
   .error {
-    font-size: 11px;
     margin: 3px 0 6px 3px;
   }
 }
